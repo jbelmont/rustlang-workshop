@@ -1,0 +1,33 @@
+{
+  "name": "rustlang-workshop",
+  "version": "1.0.0",
+  "description": "A workshop on Rustlang",
+  "main": "index.js",
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:publish": "npm run docs:build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'Update docs' && git push git@github.com:jbelmont/rustlang-workshop gh-pages --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbelmont/rustlang-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbelmont/rustlang-workshop/issues"
+  },
+  "homepage": "https://github.com/jbelmont/rustlang-workshop#readme",
+  "devDependencies": {
+    "gitbook": "^3.2.3",
+    "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-copy-code-button": "0.0.2",
+    "gitbook-plugin-highlight": "^2.0.3",
+    "gitbook-plugin-include-codeblock": "^3.2.2"
+  }
+}
