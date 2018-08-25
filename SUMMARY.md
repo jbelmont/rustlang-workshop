@@ -12,6 +12,7 @@
 * [Borrowing](docs/borrowing.md)
 * [Slices](docs/slices.md)
 * [Structs](docs/structs.md)
+* [Methods](docs/methods.md)
 * [Enums](docs/enums.md)
 * [Pattern Matching](docs/pattern_matching.md)
 * [Modules](docs/modules.md)
