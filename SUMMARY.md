@@ -4,7 +4,6 @@
 * [Hello World](docs/hello_world.md)
 * [Variables](docs/variables.md)
 * [Control Flow](docs/control_flow.md)
-* [Loops](docs/loops.md)
 * [Functions](docs/functions.md)
 * [Data Types](docs/data_types.md)
 * [Comments](docs/comments.md)
