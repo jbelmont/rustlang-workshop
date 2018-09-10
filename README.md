@@ -140,3 +140,25 @@ This will build and run the rust package.
 #### Check the Rust package for build issues
 
 You can use the `cargo check` command to see if your package will build but it will not create an executable.
+
+#### Running individual cargo packages
+
+You can run individual *cargo* packages like this:
+
+```bash
+cargo run -p strings
+```
+
+This will run the strings cargo package only
+
+You should probably try to run `cargo build` before doing this in your system.
+
+#### Running individual tests with cargo
+
+You can run individual *cargo* tests in a particular package by doing the following:
+
+```bash
+cargo test -p testing
+```
+
+This will only run tests in the testing cargo package.
