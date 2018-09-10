@@ -1,0 +1,28 @@
+[workspace]
+
+members = [
+    "closures",
+    "communicator",
+    "control-flow",
+    "enums",
+    "errors",
+    "functions",
+    "generics",
+    "guess",
+    "hash-maps",
+    "hello-world",
+    "helpful-crates",
+    "iterators",
+    "methods",
+    "minigrep",
+    "minimum-number-in-list",
+    "privacy",
+    "recoverable-errors",
+    "slices",
+    "strings",
+    "structs",
+    "testing",
+    "types",
+    "variables",
+    "vectors",
+]
