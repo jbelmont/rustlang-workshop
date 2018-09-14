@@ -25,4 +25,5 @@ members = [
     "types",
     "variables",
     "vectors",
+    "smart-pointers",
 ]
