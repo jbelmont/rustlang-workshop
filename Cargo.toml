@@ -26,4 +26,6 @@ members = [
     "variables",
     "vectors",
     "smart-pointers",
+    "concurrency",
+    "mutexes",
 ]
