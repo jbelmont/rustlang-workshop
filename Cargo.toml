@@ -28,4 +28,5 @@ members = [
     "smart-pointers",
     "concurrency",
     "mutexes",
+    "state_pattern",
 ]

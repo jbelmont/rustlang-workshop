@@ -1,0 +1,6 @@
+[package]
+name = "state_pattern"
+version = "0.1.0"
+authors = ["Jean-Marcel Belmont <marcelbelmont@gmail.com>"]
+
+[dependencies]
