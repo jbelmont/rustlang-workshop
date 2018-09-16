@@ -1,0 +1,6 @@
+[package]
+name = "unsafe_rust"
+version = "0.1.0"
+authors = ["Jean-Marcel Belmont <marcelbelmont@gmail.com>"]
+
+[dependencies]

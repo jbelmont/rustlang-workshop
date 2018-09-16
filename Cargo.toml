@@ -30,4 +30,6 @@ members = [
     "mutexes",
     "state_pattern",
     "patterns",
+    "unsafe_rust",
+    "web_server",
 ]
