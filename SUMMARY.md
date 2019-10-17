@@ -1,6 +1,5 @@
 # Rustlang Workshop
 
-* [Introduction](README.md)
 * [Hello World](docs/hello_world.md)
 * [Variables](docs/variables.md)
 * [Control Flow](docs/control_flow.md)
@@ -10,9 +9,9 @@
 * [Ownership](docs/ownership.md)
 * [References](docs/references.md)
 * [Borrowing](docs/borrowing.md)
-* [Slices](docs/slices.md)
+    * [Slices](docs/slices.md)
 * [Structs](docs/structs.md)
-* [Methods](docs/methods.md)
+    * [Methods](docs/methods.md)
 * [Enums](docs/enums.md)
 * [Pattern Matching](docs/pattern_matching.md)
 * [Modules](docs/modules.md)

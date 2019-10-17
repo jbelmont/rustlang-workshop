@@ -87,3 +87,6 @@ Cargo.lock
 
 # Gitbook files
 /_book
+
+# Hidden scripts
+.scripts

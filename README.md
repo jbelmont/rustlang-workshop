@@ -1,4 +1,30 @@
-# Rustlang Workshop
+# Rust Workshop
+
+* [Hello World](docs/hello_world.md)
+* [Variables](docs/variables.md)
+* [Control Flow](docs/control_flow.md)
+* [Functions](docs/functions.md)
+* [Data Types](docs/data_types.md)
+* [Comments](docs/comments.md)
+* [Ownership](docs/ownership.md)
+* [References](docs/references.md)
+* [Borrowing](docs/borrowing.md)
+    * [Slices](docs/slices.md)
+* [Structs](docs/structs.md)
+    * [Methods](docs/methods.md)
+* [Enums](docs/enums.md)
+* [Pattern Matching](docs/pattern_matching.md)
+* [Modules](docs/modules.md)
+* [Common Data Structures](docs/common_data_structures.md)
+    * [Vectors](docs/vectors.md)
+    * [Strings](docs/strings.md)
+    * [Hash Maps](docs/hash_maps.md)
+* [Error Handling](docs/error_handling.md)
+* [Generic Types](docs/generic_types.md)
+* [Traits](docs/traits.md)
+* [Lifetimes](docs/lifetimes.md)
+* [Testing](docs/testing.md)
+* [Helpful Crates](docs/helpful-crates.md)
 
 ## Installing Rust
 
