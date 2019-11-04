@@ -9,4 +9,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Hello World](./hello_world.md) | [Control Flow](./control_flow.md) →
+← [Hello World](./hello_world.md) | [stdin, stdout, and stderr](./stdin-stdout-stderr.md) →

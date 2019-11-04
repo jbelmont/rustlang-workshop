@@ -9,4 +9,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Variables](./variables.md) | [Functions](./functions.md) →
+←  [stdin, stdout, and stderr](./stdin-stdout-stderr.md) | [Functions](./functions.md) →
