@@ -57,6 +57,10 @@ Then we will not get error like we did before.
 
 #### Constants
 
+> A constant item is an optionally named constant value which is not associated with a specific memory location in the program. Constants are essentially inlined wherever they are used, meaning that they are copied directly into the relevant context when used. References to the same constant are not necessarily guaranteed to refer to the same memory address.
+
+[constants items specification](https://doc.rust-lang.org/reference/items/constant-items.html)
+
 [const playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=40b213461f7448931e9ec9429b651993)
 
 ```rust
@@ -65,6 +69,10 @@ fn main() {
     num = 6;
 }
 ```
+
+[constant wikipedia](https://en.wikipedia.org/wiki/Constant_(computer_programming))
+
+> In computer programming, a constant is a value that cannot be altered by the program during normal execution, i.e., the value is constant. When associated with an identifier, a constant is said to be "named," although the terms "constant" and "named constant" are often used interchangeably. This is contrasted with a variable, which is an identifier with a value that can be changed during normal execution, i.e., the value is variable. Constants are useful for both programmers and compilers: For programmers they are a form of self-documenting code and allow reasoning about correctness, while for compilers they allow compile-time and run-time checks that verify that constancy assumptions are not violated, and allow or simplify some compiler optimizations.
 
 ## Bread Crumb Navigation
 _________________________

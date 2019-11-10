@@ -10,7 +10,7 @@
 
 ## Functions Playground
 
-[Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=feeb85d74f96ed5edeb95d7885b6d145)
+[Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=4e79050b978861a350b0616a6a4b7285)
 
 ## Function Rust Specification
 
