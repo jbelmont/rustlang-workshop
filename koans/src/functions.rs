@@ -7,11 +7,16 @@ pub fn functions() {
     }
     assert!(adder(1, 2) == __);
 
+    // this function has no parameters and that is totally valid.
     fn log_statement() {
         println!("Ahoy matey!");
     }
 
     log_statement();
+
+    // rust has anonymous functions called closures
+    let difference = |x: i32, y: i32| x - y;
+    assert!(difference(3, 2) == __);
 }
 
 #[test]
