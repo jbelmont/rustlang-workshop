@@ -2,8 +2,35 @@
 
 ## Sections:
 
+* [Rust control structures](#rust-control-structures)
 * [if and if let expression](#if-and-if-let-expressions)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
+
+## Rust control structures
+
+Rust has the following control structures:
+
+* [if](https://doc.rust-lang.org/reference/expressions/if-expr.html#if-expressions)
+
+* [if let](https://doc.rust-lang.org/reference/expressions/if-expr.html#if-let-expressions)
+
+* [match expressions](https://doc.rust-lang.org/reference/expressions/match-expr.html)
+    * similar to `switch` statements in other programming languages
+
+* [loop expression](https://doc.rust-lang.org/reference/expressions/loop-expr.html#infinite-loops)
+    * similar to `while(true) {}` c language or `for {}` in golang
+
+* [while expression](https://doc.rust-lang.org/reference/expressions/loop-expr.html#predicate-loops)
+
+* [while let expression](https://doc.rust-lang.org/reference/expressions/loop-expr.html#predicate-pattern-loops)
+
+* [for expression](https://doc.rust-lang.org/reference/expressions/loop-expr.html#iterator-loops)
+
+* [break expression](https://doc.rust-lang.org/reference/expressions/loop-expr.html#break-expressions)
+
+* [continue expression](https://doc.rust-lang.org/reference/expressions/loop-expr.html#continue-expressions)
+
+* [label](https://doc.rust-lang.org/reference/expressions/loop-expr.html#loop-labels)
 
 ## if and if let expression
 
