@@ -71,7 +71,7 @@ fn main() {
 }
 ```
 
-[constant wikipedia](https://en.wikipedia.org/wiki/Constant_(computer_programming))
+[constant wikipedia](https://en.wikipedia.org/wiki/Constant_%28computer_programming%29)
 
 > In computer programming, a constant is a value that cannot be altered by the program during normal execution, i.e., the value is constant. When associated with an identifier, a constant is said to be "named," although the terms "constant" and "named constant" are often used interchangeably. This is contrasted with a variable, which is an identifier with a value that can be changed during normal execution, i.e., the value is variable. Constants are useful for both programmers and compilers: For programmers they are a form of self-documenting code and allow reasoning about correctness, while for compilers they allow compile-time and run-time checks that verify that constancy assumptions are not violated, and allow or simplify some compiler optimizations.
 
