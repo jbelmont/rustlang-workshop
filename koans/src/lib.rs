@@ -2,6 +2,7 @@ pub mod enlightenment;
 pub mod variables;
 pub mod control_flow;
 pub mod functions;
+pub mod data_types;
 
 #[cfg(test)]
 mod tests {
@@ -9,6 +10,7 @@ mod tests {
     use super::variables;
     use super::control_flow;
     use super::functions;
+    use super::data_types;
 
     #[test]
     fn koan_journey() {
@@ -23,5 +25,8 @@ mod tests {
 
         // functions.rs
         functions::functions();
+
+        // data_types.rs
+        data_types::data_types();
     }
 }
