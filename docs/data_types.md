@@ -31,6 +31,12 @@
 
 ## Data Types
 
+> Every variable, item, and value in a Rust program has a type. The type of a value defines the interpretation of the memory holding it and the operations that may be performed on the value.
+
+> Built-in types are tightly integrated into the language, in nontrivial ways that are not possible to emulate in user-defined types. User-defined types have limited capabilities.
+
+Much like other statically types programming language has a type system:
+
 * Primitive types
     * [Boolean](https://doc.rust-lang.org/reference/types/boolean.html)
     * [Numeric](https://doc.rust-lang.org/reference/types/numeric.html)
@@ -62,15 +68,62 @@
 
 ## Primitive Types
 
-Content
+A primitive type is usually a type that serves a singular purpose such as a boolean which can either be `true` or `false`
 
 #### Boolean
 
-Content
+[Boolean type](https://doc.rust-lang.org/reference/types/boolean.html#boolean-type)
+
+> The bool type is a datatype which can be either true or false. The boolean type uses one byte of memory. It is used in comparisons and bitwise operations like &, |, and !.
+
+```rust
+fn main() {
+    let flag: bool = true;
+    let not = false;
+    
+    if flag {
+        println!("flag is {}, not is {}", flag, not);
+    }
+}
+```
+
+[boolean primitive type playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=dccbb15c57b9a0baf42a4a5e46236629)
 
 #### Numeric
 
-Content
+There are integer types, and floating point types in rust
+
+###### Unsigned Integer Types
+
+Unsigned integer types consist of positive numbers up to certain limit:
+
+| Unsigned Integer Type | Minimum | Maximum |
+| --- | --- | --- | 
+| `u8` | 0 | 2<sup>8</sup> - 1 => 255 |
+| `u16` | 0 | 2<sup>16</sup> - 1 => 65535 |
+| `u32` | 0 | 2<sup>32</sup> - 1 => 4294967295 |
+| `u64` | 0 | 2<sup>64</sup> - 1 => 18446744073709551615 |
+| `u128` | 0 | 2<sup>8</sup> - 1 => 340282366920938463463374607431768211455 |
+
+*Notice here that the values are whole numbers meaning: 0, ... , <machine_integer_limit>*
+
+###### Signed Integer Types
+
+Signed integer types consist of both positive and negative numbers up to certain limit:
+
+| Signed Integer Type | Minimum | Maximum |
+| --- | --- | --- | 
+| `i8` | 0 | -(2<sup>7</sup>) - 1, 2<sup>7</sup> - 1 => -128,..., 127 |
+| `i16` | 0 | -(2<sup>15</sup>) - 1, 2<sup>15</sup> - 1 => -32768,..., 32767 |
+| `i32` | 0 | -(2<sup>31</sup>) - 1, 2<sup>31</sup> - 1 => -2147483648,..., 2147483647 |
+| `i64` | 0 | -(2<sup>63</sup>) - 1, 2<sup>63</sup> - 1 => -9223372036854775808,..., 9223372036854775807 |
+| `i128` | 0 | -(2<sup>127</sup>) - 1, 2<sup>7</sup> - 1 => -170141183460469231731687303715884105728,..., 170141183460469231731687303715884105727 |
+
+*Notice that the range here is a much larger set so when you create a signed type it will use more space in machine registers.*
+
+###### Floating Point Types
+
+There are f32 and f64 floating point types in rust.
 
 #### Textual (string,char)
 
