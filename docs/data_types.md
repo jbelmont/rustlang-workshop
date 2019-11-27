@@ -17,8 +17,8 @@
     * [Enum](#enum)
     * [Union](#union)
 * [Function Types](#function-types)
-    * [Function](#function)
-    * [Closure](#closure)
+    * [Function](#function-item-types)
+    * [Closure](#closure-types)
 * [Pointer Types](#pointer-types)
     * [References](#references)
     * [Raw Pointer](#raw-pointer)
@@ -409,23 +409,99 @@ fn main() {
 
 #### Enum
 
-Content
+[Enumerated Types specification](https://doc.rust-lang.org/reference/types/enum.html)
+
+> An enumerated type is a nominal, heterogeneous disjoint union type, denoted by the name of an enum item.
+
+> An enum item declares both the type and a number of variants, each of which is independently named and has the syntax of a struct, tuple struct or unit-like struct.
+
+> New instances of an enum can be constructed in an enumeration variant expression.
+
+```rust
+fn main() {
+    enum Army {
+        Soldier {
+            identifier: char
+        }
+    }
+    let soldier = Army::Soldier {
+        identifier: 'v',
+    };
+    
+    let ch = match soldier {
+       Army::Soldier { identifier: 'v' } => "matched v",
+       _ => "not matched"
+    };
+    assert_eq!(ch, "matched v");
+}
+```
+
+[Enum playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=4617d7938a69074a718d445a7a9e40eb)
 
 #### Union
 
-Content
+[Union specification](https://doc.rust-lang.org/reference/items/unions.html)
+
+> A union declaration uses the same syntax as a struct declaration, except with union in place of struct.
+
+> The key property of unions is that all fields of a union share common storage. As a result writes to one field of a union can overwrite its other fields, and size of a union is determined by the size of its largest field.
+
+```rust
+fn main() {
+    union Soldier {
+        age: u32,
+    }
+    
+    let rambo = Soldier {
+        age: 32,
+    };
+    assert_eq!(unsafe {rambo.age}, 32);
+}
+```
+
+*Notice that I had to wrap read to the age field in unsafe blocks.*
+
+*error[E0133]: access to union field is unsafe and requires unsafe function or block*
+
+[Union playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b9afd8d57f7628fd620222f9d9030077)
 
 ## Function Types
 
-Content
+#### Function Item Types
 
-#### Function
+[Function Item specification](https://doc.rust-lang.org/reference/types/function-item.html)
 
-Content
+> When referred to, a function item, or the constructor of a tuple-like struct or enum variant, yields a zero-sized value of its function item type. That type explicitly identifies the function - its name, its type arguments, and its early-bound lifetime arguments (but not its late-bound lifetime arguments, which are only assigned when the function is called) - so the value does not need to contain an actual function pointer, and no indirection is needed when the function is called.
 
-#### Closure
+```rust
+fn main() {
+   fn calculation<T> () {
+       println!("2 + 2 is {}", 2 + 2)
+   }
+   
+   calculation::<i32>();
+}
+```
 
-Content
+#### Closure types
+
+[Closure types specification](https://doc.rust-lang.org/reference/types/closure.html)
+
+> A closure expression produces a closure value with a unique, anonymous type that cannot be written out. A closure type is approximately equivalent to a struct which contains the captured variables. For instance, the following closure:
+
+```rust
+fn main() {
+    let compute = |numbers: std::vec::Vec<u32>| {
+        numbers
+        .iter()
+        .fold(0, |sum, val| sum + val) / numbers.len() as u32
+    };
+    
+    println!("{}", compute(vec![1, 2, 3, 4, 5]));
+}
+```
+
+[Closures playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d37d5ebed6985456d0f2fbe844e84c5c)
 
 ## Pointer Types
 
