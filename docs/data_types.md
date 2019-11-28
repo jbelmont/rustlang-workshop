@@ -505,19 +505,85 @@ fn main() {
 
 ## Pointer Types
 
-Content
+[Pointer Wikipedia Definition](https://en.wikipedia.org/wiki/Pointer_%28computer_programming%29)
+
+> In computer science, a pointer is a programming language object that stores the memory address of another value located in computer memory. A pointer references a location in memory, and obtaining the value stored at that location is known as dereferencing the pointer. As an analogy, a page number in a book's index could be considered a pointer to the corresponding page; dereferencing such a pointer would be done by flipping to the page with the given page number and reading the text found on that page. The actual format and content of a pointer variable is dependent on the underlying computer architecture.
+
+[Pointer Types specification](https://doc.rust-lang.org/reference/types/pointer.html)
+
+> All pointers in Rust are explicit first-class values. They can be moved or copied, stored into data structs, and returned from functions.
 
 #### References
 
-Content
+[References specification](https://doc.rust-lang.org/reference/types/pointer.html#shared-references-)
+
+> These point to memory owned by some other value. When a shared reference to a value is created it prevents direct mutation of the value. Interior mutability provides an exception for this in certain circumstances. As the name suggests, any number of shared references to a value may exist. A shared reference type is written &type, or &'a type when you need to specify an explicit lifetime. Copying a reference is a "shallow" operation: it involves only copying the pointer itself, that is, pointers are Copy. Releasing a reference has no effect on the value it points to, but referencing of a temporary value will keep it alive during the scope of the reference itself.
 
 #### Raw Pointer
 
-Content
+[Raw Pointer specification](https://doc.rust-lang.org/reference/types/pointer.html#raw-pointers-const-and-mut)
+
+> Raw pointers are pointers without safety or liveness guarantees. Raw pointers are written as *const T or *mut T, for example *const i32 means a raw pointer to a 32-bit integer. Copying or dropping a raw pointer has no effect on the lifecycle of any other value. Dereferencing a raw pointer is an unsafe operation, this can also be used to convert a raw pointer to a reference by reborrowing it (&* or &mut *). Raw pointers are generally discouraged in Rust code; they exist to support interoperability with foreign code, and writing performance-critical or low-level functions.
+
+
+*Note that the Rust specification explicitly mentions that Raw Pointers are discouraged in Rust so take heed.*
+
+*A lot of this is due to the inherent security flaw that occurs when you deallocate pointers when the memory address isn't correct.*
+
+Here is a good [stack overflow post on the dangers of pointers](https://stackoverflow.com/questions/4705550/dangers-of-pointers)
+
+```rust
+fn main() {
+    let number = 15;
+    
+    let raw_pointer = &number as *const i32;
+    
+    let mut num_mut = 25;
+    
+    let raw_mut = &mut num_mut as *mut i32;
+    
+    println!(
+        "number = {}\nraw_pointer = {:?}\nnum_mut = {}\nraw_mut = {:?}",
+        number,
+        raw_pointer,
+        num_mut,
+        raw_mut,
+    );
+    
+    let number2: u32 = 5;
+    let raw = &number2 as *const u32;
+    println!("{:?}", raw);
+}
+```
+
+[Raw Pointer playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b82cd4f4440f11482afee84b59be0d3a)
 
 #### Function Pointers
 
-Content
+[Function pointer types specification](https://doc.rust-lang.org/reference/types/function-pointer.html)
+
+> Function pointer types, written using the fn keyword, refer to a function whose identity is not necessarily known at compile-time. They can be created via a coercion from both function items and non-capturing closures.
+
+```rust
+fn main() {
+    fn sum(numbers: &[i32]) -> i32 {
+        let mut sum = 0;
+        for n in numbers.iter() {
+            sum += n;
+        }
+        sum
+    }
+    
+    let mut summation = sum(&[1, 2, 3, 4, 5]);
+    assert_eq!(summation, 15);
+    type MathOp = fn(&[i32]) -> i32;
+    let math: MathOp = sum;
+    summation = math(&[5, 6, 7, 8, 9, 10]);
+    println!("{}", summation);
+}
+```
+
+[Function pointers playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a294fdb229fbe7d1373d900078cb610b)
 
 ## Trait Types
 
