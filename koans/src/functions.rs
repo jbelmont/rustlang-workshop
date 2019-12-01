@@ -1,4 +1,7 @@
 pub fn functions() {
+    // TODO: Read the https://www.marcelbelmont.com/rustlang-workshop/docs/functions.html section
+    // for more information
+
     // functions in rust are specified with `fn` keyword
     // functions can take parameters and you must specify the type
     // the parameter must be
@@ -17,9 +20,4 @@ pub fn functions() {
     // rust has anonymous functions called closures
     let difference = |x: i32, y: i32| x - y;
     assert!(difference(3, 2) == __);
-}
-
-#[test]
-fn should_test_functions() {
-    functions();
 }

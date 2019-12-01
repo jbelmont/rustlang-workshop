@@ -1,4 +1,6 @@
 pub fn variables() {
+    // TODO: Read the https://www.marcelbelmont.com/rustlang-workshop/docs/variables.html section
+
     // variables of scalar type
     let x = 5; // i32
     let y = 6; // i32

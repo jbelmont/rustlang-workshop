@@ -1,4 +1,7 @@
 pub fn control_flow() {
+    // TODO: Please read the https://www.marcelbelmont.com/rustlang-workshop/docs/control_flow.html gitbook
+    // section
+
     // variable with type declaration
     let flag: bool = false;
 
@@ -102,9 +105,4 @@ pub fn control_flow() {
         }
     }
     assert!(n == __);
-}
-
-#[test]
-fn test_controlflow() {
-    control_flow();
 }
