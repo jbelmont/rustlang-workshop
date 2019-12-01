@@ -587,15 +587,89 @@ fn main() {
 
 ## Trait Types
 
-Content
+[Trait Types](https://doc.rust-lang.org/rust-by-example/trait.html)
+
+> A trait is a collection of methods defined for an unknown type: Self. They can access other methods declared in the same trait.
+
+> Traits can be implemented for any data type. In the example below, we define Animal, a group of methods. The Animal trait is then implemented for the Sheep data type, allowing the use of methods from Animal with a Sheep.
 
 #### Trait Objects
 
-Content
+[Trait Objects specification](https://doc.rust-lang.org/reference/types/trait-object.html)
+
+> A trait object is an opaque value of another type that implements a set of traits. The set of traits is made up of an object safe base trait plus any number of auto traits.
+
+> Trait objects implement the base trait, its auto traits, and any supertraits of the base trait.
+
+```rust
+trait Soldier {
+    fn abilities(&self) -> String;
+}
+
+#[derive(Debug)]
+struct Grunt {
+    rank: &'static str,
+    age: u32,
+    name: &'static str,
+    skill: [String; 4],
+}
+
+impl Soldier for Grunt {
+    fn abilities(&self) -> String {
+        format!(
+            "Rank is {}\nAge is {}\nName is {}\nSkill is {:?}",
+            self.rank,
+            self.age,
+            self.name,
+            self.skill,
+        )
+    }
+}
+
+fn main() {
+    let rambo = Grunt {
+      rank: "SFC",
+      age: 32,
+      name: "John Rambo",
+      skill: [
+        String::from("Helicopter Pilot"), 
+        String::from("Expert Weapons Knowledge"), 
+        String::from("Hand to hand combat"), 
+        String::from("Extreme Survival")
+      ],
+    };
+    
+    println!("{:?}", rambo.abilities());
+}
+```
+
+[Trait Objects playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=777267257f756fa7dd5ec66e5bad2927)
 
 #### Impl trait
 
-Content
+[Impl trait specification](https://doc.rust-lang.org/reference/types/impl-trait.html)
+
+> Functions can declare an argument to be an anonymous type parameter where the callee must provide a type that has the bounds declared by the anonymous type parameter and the function can only use the methods available by the trait bounds of the anonymous type parameter.
+
+```rust
+fn average<'n>(numbers: &'n Vec<u32>) -> impl Iterator<Item = u32> + 'n {
+    numbers
+        .iter()
+        .map(|x| x * 3)
+}
+
+fn main() {
+    let numbers = vec![1, 2, 3, 4, 5];
+    let expect_numbers = vec![3, 6, 9, 12, 15];
+    let mut counter = 0;
+    for n in average(&numbers) {
+        assert_eq!(n, expect_numbers[counter]);
+        counter += 1;
+    }
+}
+```
+
+[Impl trait playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=06f14b91fffedce6cca3a7a7cbd9a97d)
 
 ## data types koan
 
