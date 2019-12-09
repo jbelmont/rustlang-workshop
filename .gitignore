@@ -90,3 +90,6 @@ Cargo.lock
 
 # Hidden scripts
 .scripts
+
+## rust book notes from official book
+rust_book_notes

@@ -1,6 +1,0 @@
-[package]
-name = "minimum-number-in-list"
-version = "0.1.0"
-authors = ["Jean-Marcel Belmont <marcelbelmont@gmail.com>"]
-
-[dependencies]
