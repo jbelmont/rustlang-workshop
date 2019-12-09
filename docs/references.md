@@ -35,10 +35,27 @@ fn main() {
     
     print_soldier(&rambo);
     print_soldier(&rambo);
+    print_soldier(&rambo);
+}
+
+#[test]
+fn should_print_soldier() {
+    let rambo = Soldier {
+        name: String::from("John Rambo"),
+        age: 34,
+    };
+    let expected = String::from("Hello John Rambo and you say your age is 34");
+    assert_eq!(print_soldier(rambo), expected);
 }
 ```
 
 Notice the usage of the `&` in the rust example, this is how you pass a reference in Rust.
+
+Now that we made 3 calls to the print_soldier function but did not get a move error like before.
+
+*This is all because of references, when we didn't pass a reference the print_soldier took ownership and so we could not reuse the variable.*
+
+[References playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=c621e567ee1fabf7cd5593d2740a8bf3)
 
 ## Bread Crumb Navigation
 _________________________

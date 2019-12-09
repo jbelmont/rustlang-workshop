@@ -49,13 +49,13 @@ fn main() {
 If you uncomment the 2nd call to print_soldier function call you will get an error saying 
 value has been moved.
 
-*This is saying that ownership has been transferred to the print_soldier function for the rambo struct variable.
+*This is saying that ownership has been transferred to the print_soldier function for the rambo struct variable.*
 
-If use a concept called a reference we can get past the error this error.
+If we use a concept called a reference we can get past the error this error.
 
 #### Rust ownership playground example
 
-[Playgroun](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d371beb0ff897e7116b401fbf55efe73)
+[Ownership Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d371beb0ff897e7116b401fbf55efe73)
 
 ## Bread Crumb Navigation
 _________________________
