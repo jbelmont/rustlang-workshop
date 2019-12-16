@@ -12,6 +12,36 @@
 
 Slices in Rust are similar to what are called Arrays in other programming languages.
 
+#### Types that slices can hold
+
+```rust
+fn main() {
+    let mut word: String = String::from("");
+    let strs: [String; 3] = [
+        String::from("Hello"), 
+        String::from(" "), 
+        String::from("There")
+    ];
+    for str in strs.iter() {
+        word.push_str(str);
+    }
+    assert_eq!(word, "Hello There");
+    
+    let primes: [u32; 7] = [2, 3, 5, 7, 11, 13, 17];
+    assert_eq!(primes.len(), 7);
+    
+    let truth_table = [true, true, false, false, true, false];
+    assert_eq!(truth_table[4..5][0], true);
+    
+    // next line causes panic
+    // let random = vec![1, "str", false];
+}
+```
+
+Notice that each slice/array holds the same type in Rust.
+
+Slices can hold different values but you cannot have different types in a single slice, they must be the same!
+
 #### Slices versus Arrays
 
 Arrays sizes are known in compile time while slices are not.
@@ -77,7 +107,9 @@ Notice that we can do indexing of slice types in rust like other languages but w
 
 ## Slices playground
 
-[Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=78b380921537f23988937af1eae6da03)
+[Playground 1](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=94def6401cdb324df30fcdcd400f55b0)
+
+[Playground 2](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=78b380921537f23988937af1eae6da03)
 
 ## Bread Crumb Navigation
 _________________________
