@@ -3,9 +3,11 @@
 ## Sections:
 
 * [Slices in Rust](#slices-in-rust)
+    * [Types that slices can hold](#types-that-slices-can-hold)
     * [Slices versus Arrays](#slices-versus-arrays)
 * [Slices in Rust Example](#slices-in-rust-example)
 * [Slices playground](#slices-playground)
+* [Slices koan](#slices-koan)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Slices in Rust
@@ -110,6 +112,10 @@ Notice that we can do indexing of slice types in rust like other languages but w
 [Playground 1](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=94def6401cdb324df30fcdcd400f55b0)
 
 [Playground 2](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=78b380921537f23988937af1eae6da03)
+
+## Slices koan
+
+[Slices koan](../koans/src/slices.rs)
 
 ## Bread Crumb Navigation
 _________________________
