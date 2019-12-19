@@ -8,7 +8,7 @@
 * [while let](while-let)
 * [for loop](#for-loop)
 * [let statement](#let-statement)
-* [function parameter](#function-parameter)
+* [function parameter pattern](#function-parameter-pattern)
 * [Patterns koan](#patterns-koan)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
@@ -57,6 +57,12 @@ Notice that we assigned `number` a value from the match expresssion evaluation
 
 ## if let
 
+[if let specification](https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html)
+
+`if let` is a useful pattern when using match expressions can be clunky/awkward.
+
+It looks cleaner and will do the pattern match we are looking for.
+
 ```rust
 enum Animal {
     Dog(String),
@@ -90,23 +96,144 @@ Notice that in the code example above we used `if let` to match the `Animal::Cat
 
 ## while let
 
-content
+The `while let` pattern is another pattern matching expression we can use with rust.
+
+It can nicely replace patterns with match arms that are unwieldy.
+
+A `while let` loop will run as long as the condition is true.
+
+```rust
+fn main() {
+    let mut numbers = vec![1, 2, 3, 4, 5, 6, 7, 8, 9];
+    
+    let mut value = 9;
+    while let Some(top) = numbers.pop() {
+        assert_eq!(top, value);
+        value -= 1;
+    }
+}
+```
+
+In this example the numbers vector has 9 values and each value is popped off the stack so when it gets to the last value of 1 it will cease being true and the expression will no longer be true.
+
+The `pop` method has the following signature:
+
+```rust
+pub fn pop(&mut self) -> Option<T> {
+    if self.len == 0 {
+        None
+    } else {
+        unsafe {
+            self.len -= 1;
+            Some(ptr::read(self.get_unchecked(self.len())))
+        }
+    }
+}
+```
+
+Notice that it returns an `Option` type and it uses the `<T>` which will discuss later in the workshop.
+
+When the length is equal 0 it returns `None`
+
+[while let playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d23bd77e0e98d3977de111667cd252be)
 
 ## for loop
 
-content
+The `for` loop can also take a pattern that is evaluated.
+
+```rust
+fn main() {
+    let chars = vec!['a', 'b', 'c', 'd', 'e'];
+    
+    let mut counter = 0;
+    for (index, ch) in chars.iter().enumerate() {
+        match ch {
+            'a' => assert_eq!(*ch, 'a'),
+            'b' => assert_eq!(*ch, 'b'),
+            'c' => assert_eq!(*ch, 'c'),
+            'd' => assert_eq!(*ch, 'd'),
+            'e' => assert_eq!(*ch, 'e'),
+            _ => (),
+        }
+        assert_eq!(index, counter);
+        counter += 1;
+    }
+}
+```
+
+[for pattern playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=97cd72da36fbf01ca844774cebe258fe)
 
 ## let statement
 
-content
+The `let` statement itself is a pattern that matches an expression evaluation
 
-## function parameter
+```rust
+let num = 5;
+```
 
-content
+This evaluates the primitive `i32` value and assigns the value 5.
+
+```rust
+let PATTERN = EXPRESSION;
+```
+
+We can assign tuple values and use destructuring in the let evaluation
+
+```rust
+fn main() {
+    struct Ballerina {
+        name: String,
+        age: u32,
+    }
+    
+    let anna = Ballerina {
+        name: String::from("Anna Person"),
+        age: 21,
+    };
+    
+    let (name, age) = (anna.name, anna.age);
+    
+    assert_eq!(name, "Anna Person");
+    assert_eq!(age, 21);
+}
+```
+
+Notice that in this code example we instantiated a Ballerina struct value and assigned a tuple value using `let` statement.
+
+[let statement playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=0c304b9f382ac470b3cf1a2c732e5925)
+
+## function parameter pattern
+
+functions in rust can also be pattern themselves; let us look at a possible example:
+
+```rust
+fn main() {
+    
+    fn number_report((numbers, adder): (Vec<u32>, u32)) -> (u32, usize) {
+        let mut sum = 0;
+        
+        for n in numbers.iter() {
+            sum += n + adder
+        }
+        (sum, numbers.len())
+    }
+    
+    let numbers = vec![1, 2, 3, 4, 5];
+    
+    let args = (numbers, 5);
+    
+    let (summation, length) = number_report(args);
+    assert_eq!(summation, 40);
+    assert_eq!(length, 5);
+    
+}
+```
+
+[function parameter pattern playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=5e1e5b56cafc7e6a86efef3e03db3ed1)
 
 ## Patterns koan
 
-Content
+[Patterns koan](../koans/src/patterns.rs)
 
 ## Bread Crumb Navigation
 _________________________
