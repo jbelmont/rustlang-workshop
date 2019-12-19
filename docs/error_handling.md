@@ -9,4 +9,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Hash Maps](./hash_maps.md) | [Generic Types](./generic_types.md) →
+← [Data Structures](./data_structures.md) | [Generic Types](./generic_types.md) →

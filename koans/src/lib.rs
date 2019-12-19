@@ -9,7 +9,7 @@ pub mod slices;
 pub mod structs;
 pub mod methods;
 pub mod enums;
-pub mod pattern_matching;
+pub mod patterns;
 pub mod vectors;
 pub mod strings;
 pub mod hash_maps;
@@ -31,7 +31,7 @@ mod tests {
     use super::structs;
     use super::methods;
     use super::enums;
-    use super::pattern_matching;
+    use super::patterns;
     use super::vectors;
     use super::strings;
     use super::hash_maps;
@@ -75,8 +75,8 @@ mod tests {
         // enums.rs
         enums::enums();
 
-        // pattern_matching.rs
-        pattern_matching::pattern_matching();
+        // patterns.rs
+        patterns::patterns();
 
         // vectors.rs
         vectors::vectors();

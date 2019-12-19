@@ -75,4 +75,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Methods](./methods.md) | [Pattern Matching](./pattern_matching.md) →
+← [Methods](./methods.md) | [Patterns](./patterns.md) →

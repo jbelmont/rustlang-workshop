@@ -9,4 +9,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Pattern Matching](./pattern_matching.md) | [Common Data Structures](./common_data_structures.md) →
+← [Patterns](./patterns.md) | [Data Structures](./data_structures.md) →
