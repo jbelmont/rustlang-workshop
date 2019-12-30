@@ -2,7 +2,7 @@
 
 * [Hello World](docs/hello_world.md)
 * [Variables](docs/variables.md)
-* [stdin, stdout, and stderr](docs/stdin-stdout-stderr.md)
+* [Data Streams](docs/stdin-stdout-stderr.md)
 * [Control Flow](docs/control_flow.md)
 * [Functions](docs/functions.md)
 * [Data Types](docs/data_types.md)

@@ -84,4 +84,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Hello World](./hello_world.md) | [stdin, stdout, and stderr](./stdin-stdout-stderr.md) →
+← [Hello World](./hello_world.md) | [Data Streams](./stdin-stdout-stderr.md) →

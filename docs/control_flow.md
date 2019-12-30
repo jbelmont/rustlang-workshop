@@ -314,4 +314,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-←  [stdin, stdout, and stderr](./stdin-stdout-stderr.md) | [Functions](./functions.md) →
+←  [Data Streams](./stdin-stdout-stderr.md) | [Functions](./functions.md) →

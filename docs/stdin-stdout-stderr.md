@@ -1,4 +1,4 @@
-# Rust Workshop - stdin, stdout, and stderr
+# Rust Workshop - Data Streams - stdin, stdout, stderr
 
 ## Sections:
 
