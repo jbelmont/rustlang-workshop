@@ -10,6 +10,7 @@ pub mod structs;
 pub mod methods;
 pub mod enums;
 pub mod patterns;
+pub mod modules;
 pub mod vectors;
 pub mod strings;
 pub mod hash_maps;
@@ -32,6 +33,7 @@ mod tests {
     use super::methods;
     use super::enums;
     use super::patterns;
+    use super::modules;
     use super::vectors;
     use super::strings;
     use super::hash_maps;
@@ -77,6 +79,9 @@ mod tests {
 
         // patterns.rs
         patterns::patterns();
+
+        // modules.rs
+        modules::usage::example::logging();
 
         // vectors.rs
         vectors::vectors();
