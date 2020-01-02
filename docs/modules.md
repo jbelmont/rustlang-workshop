@@ -310,4 +310,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Patterns](./patterns.md) | [Data Structures](./data_structures.md) →
+← [Patterns](./patterns.md) | [Standard Library](./standard_library.md) →

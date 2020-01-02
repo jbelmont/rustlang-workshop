@@ -16,7 +16,7 @@
 * [Enums](docs/enums.md)
 * [Patterns](docs/patterns.md)
 * [Modules](docs/modules.md)
-* [Data Structures](docs/data_structures.md)
+* [Standard Library](docs/standard_library.md)
 * [Error Handling](docs/error_handling.md)
 * [Generic Types](docs/generic_types.md)
 * [Traits](docs/traits.md)
