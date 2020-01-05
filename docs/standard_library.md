@@ -12,7 +12,6 @@
 * [Common Collections](#common-collections)
     * [Vectors](#vectors)
     * [Hash Maps](#hash-maps)
-    * [Strings](#strings)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Rust Standard Library
@@ -382,11 +381,134 @@ for (index, number) in numbers.iter().enumerate() {
 
 #### Hash Maps
 
-Content
+The `HashMap` module will not be used as often as the `Vec` Module but it is another important module to be aware of rust.
 
-#### Strings
+You will typically use the `HashMap` module when you are in need of Map data structure.
 
-content
+The `HashMap` module is the equivalent of what is known as associative arrays, maps, symbol table, or dictionary in other programming languages.
+
+A `HashMap` like a `Vector` is an [abstract data type](https://en.wikipedia.org/wiki/Abstract_data_type) or in other words a data type that has a defined behavior which is implemented through methods.
+
+This abstract data type (ADT) usually has the following methods in its API:
+
+* addition of a pair to its collection
+    * `put|insert|set`
+
+
+* removal of a pair to its collection
+    * `delete|remove`
+
+
+* modification of an existing pair
+    * `insert`
+
+* lookup of value that is associated with a particular key
+    * `get`
+
+* check if it is empty
+    * `is_empty|isEmpty`
+
+
+* the number of entries aka `size`
+    * `size|len`
+
+
+* a list of keys in the `symbol table|map|dictionary`
+    * `keys`
+
+The Rust API for `HashMap` has these methods and more already defined for us:
+
+###### `insert` method
+
+The [insert](https://doc.rust-lang.org/1.30.0/std/collections/struct.HashMap.html#method.insert) method inserts a key:value pair into the map.
+
+The insert method returns an `Option<T>` type and so will return `None` if no key is present and will will return a `Some` Type and modify current value if it exists.
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    let mut soldiers = HashMap::new();
+    
+    #[derive(Debug, Clone)]
+    struct Soldier {
+        name: String,
+        age: u32,
+        rank: String,
+        years_of_service: u32,
+    }
+    let rambo = Soldier {
+        name: String::from("John Rambo"),
+        age: 32,
+        rank: String::from("SFC"),
+        years_of_service: 12,
+    };
+    soldiers.insert("rambo", &rambo);
+
+    let chuck = Soldier {
+        name: String::from("Chuck Norris"),
+        age: 34,
+        rank: String::from("MSGT"),
+        years_of_service: 13,
+    };
+    soldiers.insert("chuck", &chuck);
+    
+    assert_eq!(soldiers.get("rambo").unwrap().name, rambo.name);
+    assert_eq!(soldiers.get("chuck").unwrap().name, chuck.name);
+    
+    let mut junior = rambo.clone();
+    junior.name = String::from("Son Of Rambo");
+    
+    soldiers.insert("rambo", &junior);
+    assert_eq!(soldiers.get("rambo").unwrap().name, String::from("Son Of Rambo"));
+    assert_eq!(soldiers.get("rambo").unwrap().age, 32);
+}
+```
+
+Here we inserted 2 entries into the soldiers `HashMap` and then used `get` to retrieve our key/value pair.
+
+Notice that we had to call `unwrap` as the call to `get` returns an `Option<&V>` value
+
+[`HashMap` insert playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1b8d08cb20822a68e58fa6cebee66d1a)
+
+Notice that in the 2nd call to insert we set a name value and insert over
+
+###### `remove` method
+
+The `remove` method will remove the key and will return the old value that was set for the key. 
+
+On any subsequent calls to remove, the `None` enum type will be returned.
+
+```rust
+...............................................................
+assert_eq!(soldiers.remove("rambo").unwrap().name, String::from("Son Of Rambo"));
+assert_eq!(soldiers.remove("rambo"), None);
+```
+
+Notice that when we tried to call `remove` again we got the `None` type returned
+
+###### `is_empty` method
+
+The [is_empty](https://doc.rust-lang.org/1.30.0/std/collections/struct.HashMap.html#method.is_empty) method returns a boolean value
+
+```rust
+...................................
+assert_eq!(soldiers.is_empty(), false);
+```
+
+###### `keys` method
+
+The [keys](https://doc.rust-lang.org/1.30.0/std/collections/struct.HashMap.html#method.keys) returns a list of keys in an arbitrary order.
+
+```rust
+for key in soldiers.keys() {
+    assert_eq!(*key, String::from("chuck"));
+}
+```
+
+###### HashMap playground example
+
+[HashMap Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8c807b7a11cd1a58cf3244495fabbc52)
 
 ## Bread Crumb Navigation
 _________________________
