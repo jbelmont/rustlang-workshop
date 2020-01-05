@@ -170,7 +170,215 @@ Rust has collections types for `Sequences`, `Maps`, `Sets` and `Binary Trees` bu
 
 #### Vectors
 
-content
+[Vectors](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+
+By and large the `Vec` collection will be the collection type you use most often in rust and has many useful methods you can use.
+
+We have already seen the `Vec` type throughout the workshop but haven't formally talked about them yet.
+
+A Vector is a resizable array and like slices their size cannot be known at compile time.
+
+Vectors can grow and shrink at any time.
+
+A vector can be represented by 3 `parameters`:
+
+* Represent a `pointer` to data
+* Number of existing elements aka `length`
+* Amount of space that is allocated that is allocated for future elements aka `capacity`
+
+###### Create vector with new method
+
+You can create a vector by calling the `new` method defined in the `Vec<T>` struct
+
+```rust
+// create a vector with new method
+let numbers = Vec::new();
+```
+
+###### Create vector using `vec!` macro
+
+You can also use the `vec!` macro that is defined in the standard library to create a new vector.
+
+The `vec!` macro is defined like this in standard library:
+
+```rust
+...................................
+macro_rules! vec {
+    ($elem:expr; $n:expr) => (
+        $crate::vec::from_elem($elem, $n)
+    );
+    ($($x:expr),*) => (
+        <[_]>::into_vec(box [$($x),*])
+    );
+    ($($x:expr,)*) => ($crate::vec![$($x),*])
+}
+...................................
+```
+
+By using the `vec!` macros you can create a new vector using the array syntax that we previously used:
+
+```rust
+fn main() {
+    let primes_array: [u32; 5] = [2, 3, 5, 7, 11];
+    
+    for prime in &primes_array {
+        println!("{}", prime);
+    }
+    
+    let primes_vec_macro = vec![2, 3, 5, 7, 11];
+    for (index, prime) in primes_vec_macro.iter().enumerate() {
+        assert_eq!(&primes_array[index], prime);
+    }
+}
+```
+
+Notice that in the `primes_array` we created an array and specified the type and capacity, while in the `primes_vec_macro` we simply passed in the values and the `vec!` macro will infer the type and set a capacity for the vector for us.
+
+[array and vector comparison playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=4a84d5ae20b24d0fa4cfb29365d234b4)
+
+##### Vector methods
+
+[Vector Methods](https://doc.rust-lang.org/1.30.0/std/vec/struct.Vec.html#methods)
+
+There are many methods defined in the standard library but we will only go over some of them in this workshop. 
+
+Please read the standard library about them as you need them.
+
+We already showed one of the methods earlier which was `Vec::new()` which was used to create a new empty `Vec<T>` type.
+
+###### Vec `get` method
+
+The [get](https://doc.rust-lang.org/1.30.0/std/vec/struct.Vec.html#method.get) method is much safer than accessing by index which can result in an out of bounds indexing panic during runtime.
+
+```rust
+fn main() {
+    let primes_first_three = vec![2, 3, 5];
+    
+    assert_eq!(primes_first_three[2], 5);
+    
+    // assert_eq!(primes_first_three[4], 0);
+    
+    assert_eq!(primes_first_three.get(4), None);
+}
+```
+
+If you were to uncomment the direct vector index it would be a runtime panic.
+
+The `get` is much safer and you can check if a vector has a value without causing a runtime panic like this:
+
+```rust
+if let None = primes_first_three.get(4) {
+    println!("{}", "Invalid index here!");
+}
+```
+
+[Vec::get() method playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a1d3f3b7218b9385ca68ce1fbf972d7b)
+
+##### vector used a stack
+
+You can use `Vec<T>` as an efficient stack as well by using the `push()` and `pop()` methods.
+
+Remember that a stack structure is much like a stack of plates when washing dishes. Each plate that you stack on top is `pushed` onto the stack and you don't remove plates from the bottom of the stack instead you `pop` a plate from the top. 
+
+Likewise the `push` method pushes items to the end of the stack while the `pop` method removes elements from the top of the stack.
+
+###### `Vec::push` method
+
+[Vec::push](https://doc.rust-lang.org/1.30.0/std/vec/struct.Vec.html#method.push)
+
+```rust
+let mut primes = Vec::new();
+
+primes.push(2);
+primes.push(3);
+primes.push(5);
+
+let five: usize = 5;
+
+assert_eq!(primes[primes.len() - 1], five);
+```
+
+Notice here that we pushed => `2, 3, 5` onto the vector variable `primes` and that just like a stack the top of the item is the last item pushed which in this case is the `5` item.
+
+Notice that we also used the 
+
+###### `Vec::pop` method
+
+[Vec::pop](https://doc.rust-lang.org/1.30.0/std/vec/struct.Vec.html#method.pop)
+
+```rust1
+.................................
+primes.push(7);
+assert_eq!(primes.pop(), Some(7));
+```
+
+Notice here that pushed `7` onto the stack and then when we called the `pop` method it gave us the item on the top of the stack which is `7`. 
+
+Also note that the `pop` method returns `Option<T>` type because it is possible that vector is empty in which case the `None` enum value is returned which represents no value.
+
+*This is why we asserted `Some(7)` instead of just `7`.*
+
+###### Iterating through vectors
+
+Remember that `iterators` are used to traverse data structures like stacks.
+
+`Iterators` will traditionally have ` next()` method and you can read more about this pattern in the [Iterator_Pattern](https://en.wikipedia.org/wiki/Iterator_pattern) wikipedia link.
+
+We can iterate through the primes vector variable like this:
+
+```rust
+let mut primes = Vec::new();
+
+primes.push(2);
+primes.push(3);
+primes.push(5);
+primes.push(7);
+primes.push(11);
+
+
+let mut iterator = primes.iter();
+assert_eq!(iterator.next(), Some(&2));
+assert_eq!(iterator.next(), Some(&3));
+assert_eq!(iterator.next(), Some(&5));
+assert_eq!(iterator.next(), Some(&7));
+assert_eq!(iterator.next(), Some(&11));
+```
+
+Notice here that we called the `next` method. The `next` method is a deref method and in rust it uses the `Deref` trait and traits will be introduced later in the workshop but know that this emulates inheritance in rust.
+
+With that being said it is a method we can use with the vector.
+
+We can also use call the enumerate method and get an index value and use a `for` loop with rust like this:
+
+```rust
+let primes2 = vec![2, 3, 5, 7, 11];
+
+for (index, prime) in primes2.iter().enumerate() {
+    assert_eq!(&primes[index], prime);
+}
+```
+
+###### push|pop|next|iter|enumerate playground
+
+[push|pop|next|iter|enumerate playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=45b2057fe2b31242b594bdfe0b2d9737)
+
+###### `iter_mut` method
+
+We can also use the `iter_mut` method to return an iterator that allows us to modify each value in the `Vec<T>` variable
+
+```rust
+let mut numbers = vec![1, 2, 3, 4, 5];
+
+for number in numbers.iter_mut() {
+    *number *= 2;
+}
+
+let factor_of_two = vec![2, 4, 6, 8, 10];
+
+for (index, number) in numbers.iter().enumerate() {
+    assert_eq!(number, &factor_of_two[index]);
+}
+```
 
 #### Hash Maps
 
