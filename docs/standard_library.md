@@ -12,6 +12,7 @@
 * [Common Collections](#common-collections)
     * [Vectors](#vectors)
     * [Hash Maps](#hash-maps)
+    * [Strings](#strings)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Rust Standard Library
@@ -509,6 +510,107 @@ for key in soldiers.keys() {
 ###### HashMap playground example
 
 [HashMap Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8c807b7a11cd1a58cf3244495fabbc52)
+
+## Strings
+
+In Rust there is 2 types of strings:
+
+1. `String`
+    1. A String is stored as a vector of bytes (`Vec<u8>`), but guaranteed to always be a valid utf-8 sequence. 
+    2. String is heap allocated, growable and not null terminated.
+
+2. `&str`
+    1. `&str` is a slice (`&[u8]`) that points to a valid utf-8 sequence.
+    2. The utf-8 sequence can be used to see the String.
+
+We have already used both of these types of strings in the workshop but haven't formally talked about them in detail.
+
+#### `std::str` module
+
+The [std::str](https://doc.rust-lang.org/std/str/) module explains in detail Structs and function you can use.
+
+```rust
+let message = "I am a message!";
+```
+
+This is known as a String Literal or String Slice. 
+
+String Literals have a static lifetime which means that the variable `message` has a value for as long as the duration of the running program.
+
+#### `std::string::String` module
+
+We have been using the `String` module methods all throughout the workshop
+
+We have been using the `String::from` method for the most part like this:
+
+```rust
+let message = String::from("I am a message!");
+```
+
+There are other ways to create a `String` type like this:
+
+```rust
+let message = "I am a message!".to_string();
+let message: String = "message here".into();
+```
+
+###### String concatenation
+
+We can concatenate strings using the `+` but we must understand the borrowing rules at times.
+
+```rust
+let word = "word".to_string();
+let up = word + " up";
+assert_eq!(up, String::from("word up"));
+```
+
+###### `std::str` primitive type methods with string
+
+There is methods available in the primitive type `str` that we can use 
+
+```rust
+fn main() {
+    let pangram: &'static str = "the quick brown fox jumps over the lazy dog";
+    assert_eq!(pangram.len(), 43);
+    let mut pangram_reversed_list = "dog lazy the over jumps fox brown quick the".split_whitespace();
+    for word in pangram.split_whitespace().rev() {
+        assert_eq!(word, pangram_reversed_list.next().unwrap());
+    }
+}
+```
+
+Notice here that we used the [len](https://doc.rust-lang.org/std/primitive.str.html#method.len) method to compute the length and the [split_whitespace](https://doc.rust-lang.org/std/primitive.str.html#method.split_whitespace) primitive methods for the string slice.
+
+##### String module methods
+
+There are several methods in the `String` module that you can use one of which is the 
+
+`String::new` method.
+
+We have already looked at the `String::from` method throughout the workshop.
+
+###### Final Strings example
+
+```rust
+fn main() {
+    let pangram: &'static str = "the quick brown fox jumps over the lazy dog";
+    assert_eq!(pangram.len(), 43);
+    let mut pangram_reversed_list = "dog lazy the over jumps fox brown quick the".split_whitespace();
+    for word in pangram.split_whitespace().rev() {
+        assert_eq!(word, pangram_reversed_list.next().unwrap());
+    }
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let mut builder = String::new();
+    for ch in alphabet.split("") {
+        builder.push_str(&(ch.to_owned() + "|"));
+    }
+    assert_eq!(builder, String::from("|a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z||"));
+}
+```
+
+###### String playground
+
+[String playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=040a615a785b4928a3c408cf1b3ff962)
 
 ## Bread Crumb Navigation
 _________________________
