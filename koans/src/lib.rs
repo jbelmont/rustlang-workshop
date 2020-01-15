@@ -15,8 +15,7 @@ pub mod vectors;
 pub mod strings;
 pub mod hash_maps;
 pub mod error_handling;
-pub mod generic_types;
-pub mod traits;
+pub mod generics;
 pub mod lifetimes;
 
 #[cfg(test)]
@@ -38,8 +37,7 @@ mod tests {
     use super::strings;
     use super::hash_maps;
     use super::error_handling;
-    use super::generic_types;
-    use super::traits;
+    use super::generics;
     use super::lifetimes;
 
     #[test]
@@ -95,11 +93,8 @@ mod tests {
         // error_handling.rs
         error_handling::error_handling();
 
-        // generic_types.rs
-        generic_types::generic_types();
-
-        // traits.rs
-        traits::traits();
+        // generics.rs
+        generics::generics();
 
         // lifetimes.rs
         lifetimes::lifetimes();

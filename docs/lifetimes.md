@@ -9,4 +9,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Traits](./traits.md) | [Testing](./testing.md) →
+← [Generics](./generics.md) | [Testing](./testing.md) →

@@ -150,4 +150,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Standard Library](./standard_library.md) | [Generic Types](./generic_types.md) →
+← [Standard Library](./standard_library.md) | [Generics](./generics.md) →
