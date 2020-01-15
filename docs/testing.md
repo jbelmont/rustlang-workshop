@@ -9,4 +9,4 @@ _________________________
 
 Previous | Next
 :------- | ---:
-← [Lifetimes](./lifetimes.md) | [Helpful Crates](./helpful-crates.md) →
+← [Lifetimes](./lifetimes.md) | [README](../README.md) →

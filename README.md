@@ -21,7 +21,6 @@
 * [Generics](docs/generics.md)
 * [Lifetimes](docs/lifetimes.md)
 * [Testing](docs/testing.md)
-* [Helpful Crates](docs/helpful-crates.md)
 
 ## Installing Rust
 
