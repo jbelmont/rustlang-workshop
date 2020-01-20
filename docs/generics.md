@@ -111,15 +111,169 @@ fn main() {
 }
 ```
 
-[traits example recap playground]()https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e7fb35403f6f14529eb62303ec81c8e9
+[traits example recap playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e7fb35403f6f14529eb62303ec81c8e9)
+
+#### Bounds example
+
+```rust
+#[derive(Debug,PartialEq)]
+struct Army;
+
+#[allow(dead_code)]
+#[derive(Debug,PartialEq)]
+struct Navy;
+
+#[allow(dead_code)]
+struct AirForce;
+
+#[allow(dead_code)]
+struct Marines;
+
+#[allow(dead_code)]
+struct CoastGuard;
+
+trait Service {}
+
+impl Service for Army {}
+
+fn army<T: Service>(a: &T) -> &T {
+    a
+}
+
+fn main() {
+    let soldier = Army;
+    // army is bound to Army and won't work with other services
+    assert_eq!(&Army, army(&soldier));
+}
+```
+
+Notice that Service is bound to Army here and not to other services.
+
+[Bounds example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2b53fa275bb1483428a64e8acc1e782f)
 
 ## Where Clauses
 
-content
+A `Trait` bound can be expressed using a `where` clause rather than at the Type Level `<T>`.
+
+A `where` clause can apply Trait bounds to arbitrary types and not just type parameters.
+
+#### Here is how the `where` clause looks like in function:
+
+```rust
+// Example of where clause with function
+fn func_thing<T, U>(t: T, u: U) -> f32 
+    where T: Display + Clone, U: Clone + Debug {
+
+    }
+```
+
+#### Here is how the `where` clause looks like in implementation:
+
+```rust
+use std::fmt::Debug;
+
+trait Dude {
+    fn he_who_abides(self) -> String;
+}
+
+impl<T: std::fmt::Display> Dude for T where Option<T>: Debug {
+    fn he_who_abides(self) -> String {
+        format!("{}", self)
+    }
+}
+
+fn main() {
+    let sentence = "The rug really tied the room together";
+    let big_lebowski_phrase = String::from(sentence);
+    assert_eq!(
+        big_lebowski_phrase.he_who_abides(),
+        sentence,
+    );
+}
+```
 
 ## Associated Items
 
-content
+[Associated Types specification](https://doc.rust-lang.org/reference/items/associated-items.html#associated-types)
+
+> Associated types are type aliases associated with another type. Associated types cannot be defined in inherent implementations nor can they be given a default implementation in traits.
+
+> An associated type definition defines a type alias on another type. It is written as type, then an identifier, then an =, and finally a type.
+
+#### Associated Item example:
+
+```rust
+#[allow(dead_code)]
+struct ServiceMember {
+    branch: String,
+    name: String,
+    age: u32,
+    rank: String,
+    years_of_experience: u32,
+}
+
+trait MilitaryBranch {
+    type Branch;
+    
+    fn member_of_branch(
+        &self,
+        _: &Self::Branch,
+    ) -> String;
+}
+
+impl MilitaryBranch for ServiceMember {
+    type Branch = String;
+    
+    fn member_of_branch(
+        &self,
+        branch: &String,
+        
+    ) -> String {
+        match &self.branch {
+            s if &self.branch == branch => format!("{} is in {}", &self.name, s),
+            _ => format!("{}", "Branch not known"),
+        }
+    }
+}
+
+fn main() {
+    let army_soldier = ServiceMember {
+        branch: String::from("Army"),
+        name: String::from("John Rambo"),
+        age: 32,
+        rank: String::from("SFC"),
+        years_of_experience: 12,
+    };
+    let navy_soldier = ServiceMember {
+        branch: String::from("Navy"),
+        name: String::from("Fried Squid"),
+        age: 21,
+        rank: String::from("Ensign"),
+        years_of_experience: 1,
+    };
+    let air_force_soldier = ServiceMember {
+        branch: String::from("Air Force"),
+        name: String::from("Chuck Norris"),
+        age: 33,
+        rank: String::from("Technical Sergeant"),
+        years_of_experience: 10,
+    };
+    assert_eq!(
+        army_soldier.member_of_branch(&String::from("Army")),
+        "John Rambo is in Army",
+    );
+    assert_eq!(
+        navy_soldier.member_of_branch(&String::from("Navy")),
+        "Fried Squid is in Navy",
+    );
+    assert_eq!(
+        air_force_soldier.member_of_branch(&String::from("Air Force")),
+        "Chuck Norris is in Air Force",
+    );
+}
+```
+
+[Associated Item playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e43a7d0a07ef1a82d92b1855b4d21bfd)
 
 ## Phantom Types
 
