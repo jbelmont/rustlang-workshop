@@ -277,7 +277,50 @@ fn main() {
 
 ## Phantom Types
 
-content
+Phantom type parameters are not checked at runtime but instead are checked statically and at compile time
+
+Some Data types can use extra generic type parameters that serve as markers and these extra paramters do not hold storage values.
+
+```rust
+use std::ops::Div;
+use std::marker::PhantomData;
+
+// Creating empty enumerations so we can define a unit type
+#[derive(Debug, Clone, Copy)]
+enum Inch {}
+
+#[derive(Debug, Clone, Copy)]
+struct Length<Unit>(f64, PhantomData<Unit>);
+
+// The `Div` trait defines the behavior of the `/` operator
+impl<Unit> Div for Length<Unit> {
+    type Output = Length<Unit>;
+    
+    
+    // div() returns a new `Length` containing the quotient
+    // dividend divided by the divisor is equal to the quotient 
+    // 12 / 2 = 6
+    fn div(self, rhs: Length<Unit>) -> Length<Unit> {
+        // `/` calls the `Div` implementation for `f64`
+        Length(self.0 / rhs.0, PhantomData)
+    }
+}
+
+fn main() {
+    // Computation for converting Inches to Millimeters
+    // so 1 inch divided by 25.4 is equal to 0.0393701
+    let dividend: Length<Inch> = Length(1.0, PhantomData);
+    let divisor: Length<Inch> = Length(25.4, PhantomData);
+    
+    // `/` calls the `div()` method we implemented for `Length<Unit>`
+    let quotient = dividend / divisor;
+    // 1 / 25.4 = 0.0393701
+    // so 1 Millimeter is equal to 0.0393701 inch
+    assert_eq!(quotient.0, 0.03937007874015748);
+}
+```
+
+[PhantomData playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d3219056c20c0846b19f3a7429e57255)
 
 ## Bread Crumb Navigation
 _________________________
