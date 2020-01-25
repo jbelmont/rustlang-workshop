@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "koans",
+    "average",
+    "filter-tests"
+]

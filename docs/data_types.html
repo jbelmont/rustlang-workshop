@@ -1,0 +1,1171 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Data Types · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="comments.html" />
+    
+    
+    <link rel="prev" href="functions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="hello_world.html">
+            
+                <a href="hello_world.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="stdin-stdout-stderr.html">
+            
+                <a href="stdin-stdout-stderr.html">
+            
+                    
+                    Data Streams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ownership.html">
+            
+                <a href="ownership.html">
+            
+                    
+                    Ownership
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="borrowing.html">
+            
+                <a href="borrowing.html">
+            
+                    
+                    Borrowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="slices.html">
+            
+                <a href="slices.html">
+            
+                    
+                    Slices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="structs.html">
+            
+                <a href="structs.html">
+            
+                    
+                    Structs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="patterns.html">
+            
+                <a href="patterns.html">
+            
+                    
+                    Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="standard_library.html">
+            
+                <a href="standard_library.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="error_handling.html">
+            
+                <a href="error_handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="lifetimes.html">
+            
+                <a href="lifetimes.html">
+            
+                    
+                    Lifetimes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Data Types</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rust-workshop---data-types">Rust Workshop - Data Types</h1>
+<h2 id="sections">Sections:</h2>
+<ul>
+<li><a href="#data-types">Data Types</a></li>
+<li><a href="#primitive-types">Primitive Types</a><ul>
+<li><a href="#boolean">Boolean</a></li>
+<li><a href="#numeric">Numeric</a></li>
+<li><a href="#textual-%5C(string,char%5C">textual (string,char)</a>)</li>
+<li><a href="#never-%5C(%5C!%5C">Never (!)</a>)</li>
+</ul>
+</li>
+<li><a href="#sequence-types">Sequence Types</a><ul>
+<li><a href="#tuple">Tuple</a></li>
+<li><a href="#array">Array</a></li>
+<li><a href="#slice">Slice</a></li>
+</ul>
+</li>
+<li><a href="#user%5C-defined-types">User-defined Types</a><ul>
+<li><a href="#struct">Struct</a></li>
+<li><a href="#enum">Enum</a></li>
+<li><a href="#union">Union</a></li>
+</ul>
+</li>
+<li><a href="#function-types">Function Types</a><ul>
+<li><a href="#function-item-types">Function</a></li>
+<li><a href="#closure-types">Closure</a></li>
+</ul>
+</li>
+<li><a href="#pointer-types">Pointer Types</a><ul>
+<li><a href="#references">References</a></li>
+<li><a href="#raw-pointer">Raw Pointer</a></li>
+<li><a href="#function-pointers">Function Pointers</a></li>
+</ul>
+</li>
+<li><a href="#trait-types">Trait Types</a><ul>
+<li><a href="#trait-objects">Trait Objects</a></li>
+<li><a href="#impl-trait">Impl trait</a></li>
+</ul>
+</li>
+<li><a href="#practice-exercise-%5C--%3Edata-types">Practice Exercise -&gt; Data Types</a></li>
+<li><a href="#bread-crumb-navigation">Bread Crumb Navigation</a></li>
+</ul>
+<h2 id="data-types">Data Types</h2>
+<blockquote>
+<p>Every variable, item, and value in a Rust program has a type. The type of a value defines the interpretation of the memory holding it and the operations that may be performed on the value.</p>
+<p>Built-in types are tightly integrated into the language, in nontrivial ways that are not possible to emulate in user-defined types. User-defined types have limited capabilities.</p>
+</blockquote>
+<p>Much like other statically types programming language has a type system:</p>
+<ul>
+<li><p>Primitive types</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/reference/types/boolean.html" target="_blank">Boolean</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/numeric.html" target="_blank">Numeric</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/textual.html" target="_blank">Textual (String, char)</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/never.html" target="_blank">Never (!)</a></li>
+</ul>
+</li>
+<li><p>Sequence Types</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/reference/types/tuple.html" target="_blank">Tuple</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/array.html" target="_blank">Array</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/slice.html" target="_blank">Slice</a></li>
+</ul>
+</li>
+<li><p>User-defined types</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/reference/types/struct.html" target="_blank">Struct</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/enum.html" target="_blank">Enum</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/union.html" target="_blank">Union</a></li>
+</ul>
+</li>
+<li><p>Function Types</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/reference/types/function-item.html" target="_blank">Function</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/closure.html" target="_blank">Closure</a></li>
+</ul>
+</li>
+<li><p>Pointer Types</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/reference/types/pointer.html#shared-references-" target="_blank">References</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/pointer.html#raw-pointers-const-and-mut" target="_blank">Raw Pointer</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/function-pointer.html" target="_blank">Function Pointers</a></li>
+</ul>
+</li>
+<li><p>Trait Types</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/reference/types/trait-object.html" target="_blank">Trait Objects</a></li>
+<li><a href="https://doc.rust-lang.org/reference/types/impl-trait.html" target="_blank">Impl trait</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="primitive-types">Primitive Types</h2>
+<p>A primitive type is usually a type that serves a singular purpose such as a boolean which can either be <code>true</code> or <code>false</code></p>
+<h4 id="boolean">Boolean</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/boolean.html#boolean-type" target="_blank">Boolean type</a></p>
+<blockquote>
+<p>The bool type is a datatype which can be either true or false. The boolean type uses one byte of memory. It is used in comparisons and bitwise operations like &amp;, |, and !.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> flag: <span class="hljs-keyword">bool</span> = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">let</span> not = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-keyword">if</span> flag {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;flag is {}, not is {}&quot;</span>, flag, not);
+    }
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=dccbb15c57b9a0baf42a4a5e46236629" target="_blank">boolean primitive type playground</a></p>
+<h4 id="numeric">Numeric</h4>
+<p>There are integer types, and floating point types in rust</p>
+<h6 id="unsigned-integer-types">Unsigned Integer Types</h6>
+<p>Unsigned integer types consist of positive numbers up to certain limit:</p>
+<table>
+<thead>
+<tr>
+<th>Unsigned Integer Type</th>
+<th>Minimum</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>u8</code></td>
+<td>0</td>
+<td>2<sup>8</sup> - 1 =&gt; 255</td>
+</tr>
+<tr>
+<td><code>u16</code></td>
+<td>0</td>
+<td>2<sup>16</sup> - 1 =&gt; 65535</td>
+</tr>
+<tr>
+<td><code>u32</code></td>
+<td>0</td>
+<td>2<sup>32</sup> - 1 =&gt; 4294967295</td>
+</tr>
+<tr>
+<td><code>u64</code></td>
+<td>0</td>
+<td>2<sup>64</sup> - 1 =&gt; 18446744073709551615</td>
+</tr>
+<tr>
+<td><code>u128</code></td>
+<td>0</td>
+<td>2<sup>8</sup> - 1 =&gt; 340282366920938463463374607431768211455</td>
+</tr>
+</tbody>
+</table>
+<p><em>Notice here that the values are whole numbers meaning: 0, ... , <machine_integer_limit></machine_integer_limit></em></p>
+<h6 id="signed-integer-types">Signed Integer Types</h6>
+<p>Signed integer types consist of both positive and negative numbers up to certain limit:</p>
+<table>
+<thead>
+<tr>
+<th>Signed Integer Type</th>
+<th>Minimum</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>i8</code></td>
+<td>0</td>
+<td>-(2<sup>7</sup>) - 1, 2<sup>7</sup> - 1 =&gt; -128,..., 127</td>
+</tr>
+<tr>
+<td><code>i16</code></td>
+<td>0</td>
+<td>-(2<sup>15</sup>) - 1, 2<sup>15</sup> - 1 =&gt; -32768,..., 32767</td>
+</tr>
+<tr>
+<td><code>i32</code></td>
+<td>0</td>
+<td>-(2<sup>31</sup>) - 1, 2<sup>31</sup> - 1 =&gt; -2147483648,..., 2147483647</td>
+</tr>
+<tr>
+<td><code>i64</code></td>
+<td>0</td>
+<td>-(2<sup>63</sup>) - 1, 2<sup>63</sup> - 1 =&gt; -9223372036854775808,..., 9223372036854775807</td>
+</tr>
+<tr>
+<td><code>i128</code></td>
+<td>0</td>
+<td>-(2<sup>127</sup>) - 1, 2<sup>7</sup> - 1 =&gt; -170141183460469231731687303715884105728,..., 170141183460469231731687303715884105727</td>
+</tr>
+</tbody>
+</table>
+<p><em>Notice that the range here is a much larger set so when you create a signed type it will use more space in machine registers.</em></p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> unsigned_int8: <span class="hljs-keyword">u8</span> = <span class="hljs-number">255</span>;
+
+    <span class="hljs-keyword">let</span> unsigned_int16: u16 = <span class="hljs-number">65535</span>;
+
+    <span class="hljs-keyword">let</span> unsigned_int32: <span class="hljs-keyword">u32</span> = <span class="hljs-number">4294967295</span>;
+
+    <span class="hljs-keyword">let</span> unsigned_int64: <span class="hljs-keyword">u64</span> = <span class="hljs-number">18446744073709551615</span>;
+
+    <span class="hljs-keyword">let</span> unsigned_int128: u128 = <span class="hljs-number">340282366920938463463374607431768211455</span>;
+
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;unsigned_int8: {}, unsigned_int16: {}&quot;</span>, unsigned_int8, unsigned_int16);
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;unsigned_int32: {}, unsigned_int64: {}&quot;</span>, unsigned_int32, unsigned_int64);
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;unsigned_int128: {}&quot;</span>, unsigned_int128);
+
+    <span class="hljs-comment">// this will cause a panic by rust compiler since it is integer overflow</span>
+    <span class="hljs-comment">// panicked at &apos;attempt to add with overflow&apos;</span>
+    <span class="hljs-comment">// MAX INT 8 VALUE OF 255 + 1 = 256 =&gt; integer overflow</span>
+    <span class="hljs-comment">// println!(&quot;integer overflow for unsigned_int8: {}&quot;, unsigned_int8 + 1);</span>
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=aff6912737ce6dda9bc67e99104ab335" target="_blank">Signed Integer Types Playground</a></p>
+<h6 id="floating-point-types">Floating Point Types</h6>
+<p>There are f32 and f64 floating point types in rust.</p>
+<p>The IEEE 754 specification defines single precision floating point format which is usually 32 bits in computer memory</p>
+<p><a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format" target="_blank">Single-precision floating-point format Wikipedia Post</a></p>
+<p>as well as <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format" target="_blank">Double-precision floating-point format
+</a> which usually occupies 64 bits in computer memory.</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">use</span> std::<span class="hljs-keyword">f32</span>;
+<span class="hljs-keyword">use</span> std::<span class="hljs-keyword">f64</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-comment">// smallest postive number</span>
+    <span class="hljs-keyword">let</span> min = f32::MIN_POSITIVE;
+    <span class="hljs-comment">// largest possible value for f32</span>
+    <span class="hljs-keyword">let</span> max = f32::MAX;
+
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, min);
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, max);
+
+    <span class="hljs-keyword">let</span> maximumf32: <span class="hljs-keyword">f32</span> = <span class="hljs-number">0.00000000000000000000000000000000000001175494455</span>;
+    <span class="hljs-comment">// a digit of precision is lost here since we reached our max</span>
+    <span class="hljs-comment">// which is 47 digits long</span>
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, maximumf32);
+
+    <span class="hljs-keyword">let</span> minimum = f64::MIN_POSITIVE;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, minimum);
+
+    <span class="hljs-keyword">let</span> maximum = f64::MAX;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, maximum);
+
+    <span class="hljs-keyword">let</span> maximumf64: <span class="hljs-keyword">f64</span> = <span class="hljs-number">0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022250738585072014</span>;
+    <span class="hljs-comment">// 327 digits long</span>
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, maximumf64);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=b05a82ec173cc8c7f9ec81475faa46bf" target="_blank">Floating Point Types Playground</a></p>
+<h6 id="machine-dependent-integer-types">Machine dependent integer types</h6>
+<p><a href="https://doc.rust-lang.org/reference/types/numeric.html#machine-dependent-integer-types" target="_blank">Machine dependent integer types</a></p>
+<blockquote>
+<p>The usize type is an unsigned integer type with the same number of bits as the platform&apos;s pointer type. It can represent every memory address in the process.</p>
+<p>The isize type is a signed integer type with the same number of bits as the platform&apos;s pointer type. The theoretical upper bound on object and array size is the maximum isize value. This ensures that isize can be used to calculate differences between pointers into an object or array and can address every byte within an object along with one byte past the end.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> number: <span class="hljs-keyword">isize</span> = -<span class="hljs-number">5000050</span>;
+    <span class="hljs-keyword">let</span> number2: <span class="hljs-keyword">usize</span> = <span class="hljs-number">300</span>;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;number = {}\nnumber2 = {}&quot;</span>, number, number2);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=5319aa16b20108a4a4e6eca3df2c862a" target="_blank">Machine dependent integer types playground</a></p>
+<h4 id="textual-stringchar">Textual (string,char)</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/textual.html" target="_blank">textual types specification</a></p>
+<blockquote>
+<p>The types char and str hold textual data.</p>
+<p>A value of type char is a Unicode scalar value (i.e. a code point that is not a surrogate), represented as a 32-bit unsigned word in the 0x0000 to 0xD7FF or 0xE000 to 0x10FFFF range. A char is effectively a UCS-4 / UTF-32 string.</p>
+<p>A value of type str is a Unicode string, represented as an array of 8-bit unsigned bytes holding a sequence of UTF-8 code points. Since str is a dynamically sized type, it is not a first-class type, but can only be instantiated through a pointer type, such as &amp;str.</p>
+</blockquote>
+<p><a href="https://stackoverflow.com/questions/48465265/what-is-the-difference-between-unicode-code-points-and-unicode-scalars" target="_blank">stackoverflow post on difference between unicode code point and unicode scalar</a></p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> max_char = std::char::MAX;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, max_char);
+
+    <span class="hljs-keyword">let</span> chars = <span class="hljs-string">&quot;abcdefghi&quot;</span>;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, chars);
+
+    <span class="hljs-keyword">let</span> strings = <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;abcdefghi&quot;</span>);
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, strings);
+
+    <span class="hljs-keyword">let</span> word1: &amp;<span class="hljs-symbol">&apos;static</span> <span class="hljs-keyword">str</span> = <span class="hljs-string">&quot;abc&quot;</span>;
+    <span class="hljs-keyword">let</span> word2: &amp;<span class="hljs-symbol">&apos;static</span> <span class="hljs-keyword">str</span> = <span class="hljs-string">&quot;def&quot;</span>;
+    <span class="hljs-comment">// string concatenation is not as easy as you think here</span>
+    <span class="hljs-comment">// these are str bute you have to transfer ownership</span>
+    <span class="hljs-keyword">let</span> word3 = word1.to_owned() + &amp;word2;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, word3);
+
+    <span class="hljs-keyword">let</span> word3 = <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;123&quot;</span>);
+    <span class="hljs-keyword">let</span> word4 = <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;456&quot;</span>);
+    <span class="hljs-keyword">let</span> word5 = word3 + &amp;word4;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, word5);
+
+    <span class="hljs-keyword">let</span> letter: <span class="hljs-keyword">char</span> = <span class="hljs-string">&apos;a&apos;</span>;
+    <span class="hljs-comment">// invalid index here</span>
+    <span class="hljs-comment">// println!(&quot;{}&quot;, &amp;letters[0..1]);</span>
+
+    <span class="hljs-comment">// slicing strings</span>
+    <span class="hljs-keyword">let</span> word: &amp;<span class="hljs-symbol">&apos;static</span> <span class="hljs-keyword">str</span> = <span class="hljs-string">&quot;bird bird is the word&quot;</span>;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, &amp;word[<span class="hljs-number">0</span>..<span class="hljs-number">4</span>]);
+
+    <span class="hljs-keyword">let</span> letters: &amp;<span class="hljs-symbol">&apos;static</span> <span class="hljs-keyword">str</span> = <span class="hljs-string">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span>;
+    <span class="hljs-keyword">for</span> l <span class="hljs-keyword">in</span> letters.chars() {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, l);
+    }
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=f1e40a486bbf1fceb67cacd4338df4b9" target="_blank">textual types playground</a></p>
+<h4 id="never-">Never (!)</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/never.html" target="_blank">Never (!) specification</a></p>
+<blockquote>
+<p>The never type ! is a type with no values, representing the result of computations that never complete. Expressions of type ! can be coerced into any other type.</p>
+</blockquote>
+<p>Please read this excellent <a href="http://smallcultfollowing.com/babysteps/blog/2018/08/13/never-patterns-exhaustive-matching-and-uninhabited-types-oh-my/" target="_blank">blog post on never pattern</a> by <a href="https://twitter.com/nikomatsakis" target="_blank">Niko Matsakis</a></p>
+<h2 id="sequence-types">Sequence Types</h2>
+<p>According to <a href="https://en.wikipedia.org/wiki/Sequence" target="_blank">Wikipedia</a>:</p>
+<blockquote>
+<p>In mathematics, a sequence is an enumerated collection of objects in which repetitions are allowed. Like a set, it contains members (also called elements, or terms). The number of elements (possibly infinite) is called the length of the sequence. Unlike a set, the same elements can appear multiple times at different positions in a sequence, and order matters. Formally, a sequence can be defined as a function whose domain is either the set of the natural numbers (for infinite sequences) or the set of the first n natural numbers (for a sequence of finite length n).</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Sequence#Computing" target="_blank">Computing Definition</a></p>
+<blockquote>
+<p>In computer science, finite sequences are called lists. Potentially infinite sequences are called streams. Finite sequences of characters or digits are called strings.</p>
+</blockquote>
+<h4 id="tuple">Tuple</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/tuple.html" target="_blank">Tuple Specification</a></p>
+<blockquote>
+<p>A tuple type is a heterogeneous product of other types, called the elements of the tuple. It has no nominal name and is instead structurally typed.</p>
+<p>Tuple types and values are denoted by listing the types or values of their elements, respectively, in a parenthesized, comma-separated list.</p>
+<p>Because tuple elements don&apos;t have a name, they can only be accessed by pattern-matching or by using N directly as a field to access the Nth element.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+
+    <span class="hljs-keyword">let</span> (a, b, c, d) = (<span class="hljs-number">3</span>, <span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-number">2.5</span>, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;hello&quot;</span>));
+
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;a = {}\nb = {}\nc = {}\nd = {}&quot;</span>, a, b, c, d);
+
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Point</span></span> {
+        x: <span class="hljs-keyword">u32</span>,
+        y: <span class="hljs-keyword">u32</span>,
+    }
+
+    <span class="hljs-keyword">let</span> tuple = (
+        <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;two&quot;</span>,
+        <span class="hljs-number">2.5</span>,
+        Point {
+            x: <span class="hljs-number">3</span>,
+            y: <span class="hljs-number">5</span>,
+        }
+    );
+    <span class="hljs-built_in">assert_eq!</span>(tuple.<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+    <span class="hljs-built_in">assert_eq!</span>(tuple.<span class="hljs-number">1</span>, <span class="hljs-string">&quot;two&quot;</span>);
+    <span class="hljs-built_in">assert_eq!</span>(tuple.<span class="hljs-number">2</span>, <span class="hljs-number">2.5</span>);
+    <span class="hljs-built_in">assert_eq!</span>(tuple.<span class="hljs-number">3</span>.x == <span class="hljs-number">3</span> &amp;&amp; tuple.<span class="hljs-number">3</span>.y == <span class="hljs-number">5</span>, <span class="hljs-literal">true</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=53c1d042c65c730578b94b482b3c7575" target="_blank">tuple types playground</a></p>
+<h4 id="array">Array</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/array.html" target="_blank">Array types specification</a></p>
+<blockquote>
+<p>An array is a fixed-size sequence of N elements of type T. The array type is written as [T; N]. The size is an expression that evaluates to a usize.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> numbers: [<span class="hljs-keyword">i32</span>; <span class="hljs-number">10</span>] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>];
+
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> sum: <span class="hljs-keyword">i32</span> = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> &amp;numbers {
+        sum += n;
+    }
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, sum);
+
+    <span class="hljs-keyword">let</span> boxed_array: <span class="hljs-built_in">Box</span>&lt;[<span class="hljs-keyword">i32</span>]&gt; = <span class="hljs-built_in">Box</span>::new([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>]);
+
+    <span class="hljs-comment">// Lines 13 - 15 don&apos;t work as you can&apos;t iterate over Box type</span>
+    <span class="hljs-comment">// Box type doesn&apos;t implement an iterator</span>
+    <span class="hljs-comment">// for b in boxed_array {</span>
+    <span class="hljs-comment">//     println!(&quot;{}&quot;, b);</span>
+    <span class="hljs-comment">// }</span>
+
+    <span class="hljs-built_in">assert_eq!</span>(boxed_array[<span class="hljs-number">4</span>], <span class="hljs-number">5</span>, <span class="hljs-string">&quot;Should get 5 here!&quot;</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=7b7df73a2dbfe10c4daadf5adbf4c4a9" target="_blank">Array types playground</a></p>
+<h4 id="slice">Slice</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/slice.html" target="_blank">Slice types specification</a></p>
+<blockquote>
+<p>A slice is a dynamically sized type representing a &apos;view&apos; into a sequence of elements of type T. The slice type is written as [T].</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-comment">// This is a heap-allocated array that is being coerced</span>
+    <span class="hljs-comment">// into a slice</span>
+    <span class="hljs-keyword">let</span> boxed_array: <span class="hljs-built_in">Box</span>&lt;[<span class="hljs-keyword">i32</span>]&gt; = <span class="hljs-built_in">Box</span>::new([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+
+    <span class="hljs-built_in">assert_eq!</span>(boxed_array[<span class="hljs-number">2</span>], <span class="hljs-number">3</span>);
+
+    <span class="hljs-comment">// a shared slice into an array</span>
+    <span class="hljs-comment">// this gets elements 0, 1, 2 into slice var</span>
+    <span class="hljs-keyword">let</span> slice: &amp;[<span class="hljs-keyword">i32</span>] = &amp;boxed_array[<span class="hljs-number">0</span>..<span class="hljs-number">3</span>];
+    <span class="hljs-built_in">assert_eq!</span>(slice[<span class="hljs-number">2</span>], <span class="hljs-number">3</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=4c1978754e6efef4ea6ee6125f757b6b" target="_blank">Slice types playground</a></p>
+<h2 id="user-defined-types">User-defined Types</h2>
+<p>User defined types let a programmer define attributes and particular state.</p>
+<h4 id="struct">Struct</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/struct.html#structtype" target="_blank">Struct types specification</a></p>
+<blockquote>
+<p>A struct type is a heterogeneous product of other types, called the fields of the type.</p>
+<p>New instances of a struct can be constructed with a struct expression.</p>
+<p>The memory layout of a struct is undefined by default to allow for compiler optimizations like field reordering, but it can be fixed with the repr attribute. In either case, fields may be given in any order in a corresponding struct expression; the resulting struct value will always have the same memory layout.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Soldier</span></span>&lt;<span class="hljs-symbol">&apos;a</span>, <span class="hljs-symbol">&apos;b</span>&gt; {
+        name: &amp;<span class="hljs-symbol">&apos;a</span> <span class="hljs-keyword">str</span>,
+        rank: &amp;<span class="hljs-symbol">&apos;b</span> <span class="hljs-keyword">str</span>,
+        experience: <span class="hljs-keyword">u32</span>,
+    }
+
+    <span class="hljs-keyword">let</span> rambo = Soldier {
+        name: <span class="hljs-string">&quot;John Rambo&quot;</span>,
+        rank: <span class="hljs-string">&quot;SFC&quot;</span>,
+        experience: <span class="hljs-number">12</span>,
+    };
+
+    <span class="hljs-built_in">assert_eq!</span>(rambo.name, <span class="hljs-string">&quot;John Rambo&quot;</span>);
+    <span class="hljs-built_in">assert_eq!</span>(rambo.rank, <span class="hljs-string">&quot;SFC&quot;</span>);
+    <span class="hljs-built_in">assert_eq!</span>(rambo.experience, <span class="hljs-number">12</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=9b7993f44fc0bc3f6acb8b56f3d35ef4" target="_blank">Struct types playground</a></p>
+<h4 id="enum">Enum</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/enum.html" target="_blank">Enumerated Types specification</a></p>
+<blockquote>
+<p>An enumerated type is a nominal, heterogeneous disjoint union type, denoted by the name of an enum item.</p>
+<p>An enum item declares both the type and a number of variants, each of which is independently named and has the syntax of a struct, tuple struct or unit-like struct.</p>
+<p>New instances of an enum can be constructed in an enumeration variant expression.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Army</span></span> {
+        Soldier {
+            identifier: <span class="hljs-keyword">char</span>
+        }
+    }
+    <span class="hljs-keyword">let</span> soldier = Army::Soldier {
+        identifier: <span class="hljs-string">&apos;v&apos;</span>,
+    };
+
+    <span class="hljs-keyword">let</span> ch = <span class="hljs-keyword">match</span> soldier {
+       Army::Soldier { identifier: <span class="hljs-string">&apos;v&apos;</span> } =&gt; <span class="hljs-string">&quot;matched v&quot;</span>,
+       _ =&gt; <span class="hljs-string">&quot;not matched&quot;</span>
+    };
+    <span class="hljs-built_in">assert_eq!</span>(ch, <span class="hljs-string">&quot;matched v&quot;</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=4617d7938a69074a718d445a7a9e40eb" target="_blank">Enum playground</a></p>
+<h4 id="union">Union</h4>
+<p><a href="https://doc.rust-lang.org/reference/items/unions.html" target="_blank">Union specification</a></p>
+<blockquote>
+<p>A union declaration uses the same syntax as a struct declaration, except with union in place of struct.</p>
+<p>The key property of unions is that all fields of a union share common storage. As a result writes to one field of a union can overwrite its other fields, and size of a union is determined by the size of its largest field.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    union Soldier {
+        age: <span class="hljs-keyword">u32</span>,
+    }
+
+    <span class="hljs-keyword">let</span> rambo = Soldier {
+        age: <span class="hljs-number">32</span>,
+    };
+    <span class="hljs-built_in">assert_eq!</span>(<span class="hljs-keyword">unsafe</span> {rambo.age}, <span class="hljs-number">32</span>);
+}
+</code></pre>
+<p><em>Notice that I had to wrap read to the age field in unsafe blocks.</em></p>
+<p><em>error[E0133]: access to union field is unsafe and requires unsafe function or block</em></p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=b9afd8d57f7628fd620222f9d9030077" target="_blank">Union playground</a></p>
+<h2 id="function-types">Function Types</h2>
+<h4 id="function-item-types">Function Item Types</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/function-item.html" target="_blank">Function Item specification</a></p>
+<blockquote>
+<p>When referred to, a function item, or the constructor of a tuple-like struct or enum variant, yields a zero-sized value of its function item type. That type explicitly identifies the function - its name, its type arguments, and its early-bound lifetime arguments (but not its late-bound lifetime arguments, which are only assigned when the function is called) - so the value does not need to contain an actual function pointer, and no indirection is needed when the function is called.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+   <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">calculation</span></span>&lt;T&gt; () {
+       <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;2 + 2 is {}&quot;</span>, <span class="hljs-number">2</span> + <span class="hljs-number">2</span>)
+   }
+
+   calculation::&lt;<span class="hljs-keyword">i32</span>&gt;();
+}
+</code></pre>
+<h4 id="closure-types">Closure types</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/closure.html" target="_blank">Closure types specification</a></p>
+<blockquote>
+<p>A closure expression produces a closure value with a unique, anonymous type that cannot be written out. A closure type is approximately equivalent to a struct which contains the captured variables. For instance, the following closure:</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> compute = |numbers: std::vec::<span class="hljs-built_in">Vec</span>&lt;<span class="hljs-keyword">u32</span>&gt;| {
+        numbers
+        .iter()
+        .fold(<span class="hljs-number">0</span>, |sum, val| sum + val) / numbers.len() <span class="hljs-keyword">as</span> <span class="hljs-keyword">u32</span>
+    };
+
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, compute(<span class="hljs-built_in">vec!</span>[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]));
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=d37d5ebed6985456d0f2fbe844e84c5c" target="_blank">Closures playground</a></p>
+<h2 id="pointer-types">Pointer Types</h2>
+<p><a href="https://en.wikipedia.org/wiki/Pointer_%28computer_programming%29" target="_blank">Pointer Wikipedia Definition</a></p>
+<blockquote>
+<p>In computer science, a pointer is a programming language object that stores the memory address of another value located in computer memory. A pointer references a location in memory, and obtaining the value stored at that location is known as dereferencing the pointer. As an analogy, a page number in a book&apos;s index could be considered a pointer to the corresponding page; dereferencing such a pointer would be done by flipping to the page with the given page number and reading the text found on that page. The actual format and content of a pointer variable is dependent on the underlying computer architecture.</p>
+</blockquote>
+<p><a href="https://doc.rust-lang.org/reference/types/pointer.html" target="_blank">Pointer Types specification</a></p>
+<blockquote>
+<p>All pointers in Rust are explicit first-class values. They can be moved or copied, stored into data structs, and returned from functions.</p>
+</blockquote>
+<h4 id="references">References</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/pointer.html#shared-references-" target="_blank">References specification</a></p>
+<blockquote>
+<p>These point to memory owned by some other value. When a shared reference to a value is created it prevents direct mutation of the value. Interior mutability provides an exception for this in certain circumstances. As the name suggests, any number of shared references to a value may exist. A shared reference type is written &amp;type, or &amp;&apos;a type when you need to specify an explicit lifetime. Copying a reference is a &quot;shallow&quot; operation: it involves only copying the pointer itself, that is, pointers are Copy. Releasing a reference has no effect on the value it points to, but referencing of a temporary value will keep it alive during the scope of the reference itself.</p>
+</blockquote>
+<h4 id="raw-pointer">Raw Pointer</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/pointer.html#raw-pointers-const-and-mut" target="_blank">Raw Pointer specification</a></p>
+<blockquote>
+<p>Raw pointers are pointers without safety or liveness guarantees. Raw pointers are written as <em>const T or </em>mut T, for example <em>const i32 means a raw pointer to a 32-bit integer. Copying or dropping a raw pointer has no effect on the lifecycle of any other value. Dereferencing a raw pointer is an unsafe operation, this can also be used to convert a raw pointer to a reference by reborrowing it (&amp;</em> or &amp;mut *). Raw pointers are generally discouraged in Rust code; they exist to support interoperability with foreign code, and writing performance-critical or low-level functions.</p>
+</blockquote>
+<p><em>Note that the Rust specification explicitly mentions that Raw Pointers are discouraged in Rust so take heed.</em></p>
+<p><em>A lot of this is due to the inherent security flaw that occurs when you deallocate pointers when the memory address isn&apos;t correct.</em></p>
+<p>Here is a good <a href="https://stackoverflow.com/questions/4705550/dangers-of-pointers" target="_blank">stack overflow post on the dangers of pointers</a></p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> number = <span class="hljs-number">15</span>;
+
+    <span class="hljs-keyword">let</span> raw_pointer = &amp;number <span class="hljs-keyword">as</span> *<span class="hljs-keyword">const</span> <span class="hljs-keyword">i32</span>;
+
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> num_mut = <span class="hljs-number">25</span>;
+
+    <span class="hljs-keyword">let</span> raw_mut = &amp;<span class="hljs-keyword">mut</span> num_mut <span class="hljs-keyword">as</span> *<span class="hljs-keyword">mut</span> <span class="hljs-keyword">i32</span>;
+
+    <span class="hljs-built_in">println!</span>(
+        <span class="hljs-string">&quot;number = {}\nraw_pointer = {:?}\nnum_mut = {}\nraw_mut = {:?}&quot;</span>,
+        number,
+        raw_pointer,
+        num_mut,
+        raw_mut,
+    );
+
+    <span class="hljs-keyword">let</span> number2: <span class="hljs-keyword">u32</span> = <span class="hljs-number">5</span>;
+    <span class="hljs-keyword">let</span> raw = &amp;number2 <span class="hljs-keyword">as</span> *<span class="hljs-keyword">const</span> <span class="hljs-keyword">u32</span>;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{:?}&quot;</span>, raw);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=b82cd4f4440f11482afee84b59be0d3a" target="_blank">Raw Pointer playground</a></p>
+<h4 id="function-pointers">Function Pointers</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/function-pointer.html" target="_blank">Function pointer types specification</a></p>
+<blockquote>
+<p>Function pointer types, written using the fn keyword, refer to a function whose identity is not necessarily known at compile-time. They can be created via a coercion from both function items and non-capturing closures.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">sum</span></span>(numbers: &amp;[<span class="hljs-keyword">i32</span>]) -&gt; <span class="hljs-keyword">i32</span> {
+        <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> sum = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> numbers.iter() {
+            sum += n;
+        }
+        sum
+    }
+
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> summation = sum(&amp;[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+    <span class="hljs-built_in">assert_eq!</span>(summation, <span class="hljs-number">15</span>);
+    <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">MathOp</span></span> = <span class="hljs-function"><span class="hljs-keyword">fn</span></span>(&amp;[<span class="hljs-keyword">i32</span>]) -&gt; <span class="hljs-keyword">i32</span>;
+    <span class="hljs-keyword">let</span> math: MathOp = sum;
+    summation = math(&amp;[<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>]);
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, summation);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=a294fdb229fbe7d1373d900078cb610b" target="_blank">Function pointers playground</a></p>
+<h2 id="trait-types">Trait Types</h2>
+<p><a href="https://doc.rust-lang.org/rust-by-example/trait.html" target="_blank">Trait Types</a></p>
+<blockquote>
+<p>A trait is a collection of methods defined for an unknown type: Self. They can access other methods declared in the same trait.</p>
+<p>Traits can be implemented for any data type. In the example below, we define Animal, a group of methods. The Animal trait is then implemented for the Sheep data type, allowing the use of methods from Animal with a Sheep.</p>
+</blockquote>
+<h4 id="trait-objects">Trait Objects</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/trait-object.html" target="_blank">Trait Objects specification</a></p>
+<blockquote>
+<p>A trait object is an opaque value of another type that implements a set of traits. The set of traits is made up of an object safe base trait plus any number of auto traits.</p>
+<p>Trait objects implement the base trait, its auto traits, and any supertraits of the base trait.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Soldier</span></span> {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">abilities</span></span>(&amp;<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-built_in">String</span>;
+}
+
+<span class="hljs-meta">#[derive(Debug)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Grunt</span></span> {
+    rank: &amp;<span class="hljs-symbol">&apos;static</span> <span class="hljs-keyword">str</span>,
+    age: <span class="hljs-keyword">u32</span>,
+    name: &amp;<span class="hljs-symbol">&apos;static</span> <span class="hljs-keyword">str</span>,
+    skill: [<span class="hljs-built_in">String</span>; <span class="hljs-number">4</span>],
+}
+
+<span class="hljs-keyword">impl</span> Soldier <span class="hljs-keyword">for</span> Grunt {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">abilities</span></span>(&amp;<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-built_in">String</span> {
+        <span class="hljs-built_in">format!</span>(
+            <span class="hljs-string">&quot;Rank is {}\nAge is {}\nName is {}\nSkill is {:?}&quot;</span>,
+            <span class="hljs-keyword">self</span>.rank,
+            <span class="hljs-keyword">self</span>.age,
+            <span class="hljs-keyword">self</span>.name,
+            <span class="hljs-keyword">self</span>.skill,
+        )
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> rambo = Grunt {
+      rank: <span class="hljs-string">&quot;SFC&quot;</span>,
+      age: <span class="hljs-number">32</span>,
+      name: <span class="hljs-string">&quot;John Rambo&quot;</span>,
+      skill: [
+        <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Helicopter Pilot&quot;</span>), 
+        <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Expert Weapons Knowledge&quot;</span>), 
+        <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Hand to hand combat&quot;</span>), 
+        <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Extreme Survival&quot;</span>)
+      ],
+    };
+
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{:?}&quot;</span>, rambo.abilities());
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=777267257f756fa7dd5ec66e5bad2927" target="_blank">Trait Objects playground</a></p>
+<h4 id="impl-trait">Impl trait</h4>
+<p><a href="https://doc.rust-lang.org/reference/types/impl-trait.html" target="_blank">Impl trait specification</a></p>
+<blockquote>
+<p>Functions can declare an argument to be an anonymous type parameter where the callee must provide a type that has the bounds declared by the anonymous type parameter and the function can only use the methods available by the trait bounds of the anonymous type parameter.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">average</span></span>&lt;<span class="hljs-symbol">&apos;n</span>&gt;(numbers: &amp;<span class="hljs-symbol">&apos;n</span> <span class="hljs-built_in">Vec</span>&lt;<span class="hljs-keyword">u32</span>&gt;) -&gt; <span class="hljs-keyword">impl</span> <span class="hljs-built_in">Iterator</span>&lt;Item = <span class="hljs-keyword">u32</span>&gt; + <span class="hljs-symbol">&apos;n</span> {
+    numbers
+        .iter()
+        .map(|x| x * <span class="hljs-number">3</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> numbers = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+    <span class="hljs-keyword">let</span> expect_numbers = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">9</span>, <span class="hljs-number">12</span>, <span class="hljs-number">15</span>];
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> counter = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> average(&amp;numbers) {
+        <span class="hljs-built_in">assert_eq!</span>(n, expect_numbers[counter]);
+        counter += <span class="hljs-number">1</span>;
+    }
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=06f14b91fffedce6cca3a7a7cbd9a97d" target="_blank">Impl trait playground</a></p>
+<h2 id="practice-exercise---data-types">Practice Exercise -&gt; Data Types</h2>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=e1fc4c2589d4454fa49d88ac26eb3114" target="_blank">Practice Exercise -&gt; Data Types</a></p>
+<h2 id="bread-crumb-navigation">Bread Crumb Navigation</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Previous</th>
+<th style="text-align:right">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x2190; <a href="functions.html">Functions</a></td>
+<td style="text-align:right"><a href="comments.html">Comments</a> &#x2192;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="functions.html" class="navigation navigation-prev " aria-label="Previous page: Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="comments.html" class="navigation navigation-next " aria-label="Next page: Comments">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data Types","level":"1.7","depth":1,"next":{"title":"Comments","level":"1.8","depth":1,"path":"docs/comments.md","ref":"docs/comments.md","articles":[]},"previous":{"title":"Functions","level":"1.6","depth":1,"path":"docs/functions.md","ref":"docs/functions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","advanced-emoji","highlight","copy-code-button"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/data_types.md","mtime":"2020-01-25T14:08:26.757Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T14:18:23.704Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

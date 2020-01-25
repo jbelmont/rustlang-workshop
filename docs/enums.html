@@ -1,0 +1,582 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Enums · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="patterns.html" />
+    
+    
+    <link rel="prev" href="methods.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="hello_world.html">
+            
+                <a href="hello_world.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="stdin-stdout-stderr.html">
+            
+                <a href="stdin-stdout-stderr.html">
+            
+                    
+                    Data Streams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ownership.html">
+            
+                <a href="ownership.html">
+            
+                    
+                    Ownership
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="borrowing.html">
+            
+                <a href="borrowing.html">
+            
+                    
+                    Borrowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="slices.html">
+            
+                <a href="slices.html">
+            
+                    
+                    Slices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="structs.html">
+            
+                <a href="structs.html">
+            
+                    
+                    Structs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="patterns.html">
+            
+                <a href="patterns.html">
+            
+                    
+                    Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="standard_library.html">
+            
+                <a href="standard_library.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="error_handling.html">
+            
+                <a href="error_handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="lifetimes.html">
+            
+                <a href="lifetimes.html">
+            
+                    
+                    Lifetimes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Enums</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rust-workshop---enums">Rust Workshop - Enums</h1>
+<h2 id="sections">Sections:</h2>
+<ul>
+<li><a href="#enum-definition">Enum definition</a></li>
+<li><a href="#enum-example">Enum example</a></li>
+<li><a href="#match-expression">Match expression</a></li>
+<li><a href="#if-let-expression">if let expression</a></li>
+<li><a href="#enum-playground">Enum playground</a></li>
+<li><a href="#practice-exercise-%5C--%3Eenum">Practice Exercise -&gt; Enum</a></li>
+<li><a href="#bread-crumb-navigation">Bread Crumb Navigation</a></li>
+</ul>
+<h2 id="enum-definition">Enum definition</h2>
+<p><a href="https://doc.rust-lang.org/reference/types/enum.html" target="_blank">Enumerated Type specification</a></p>
+<blockquote>
+<p>An enumeration, also referred to as enum is a simultaneous definition of a nominal enumerated type as well as a set of constructors, that can be used to create or pattern-match values of the corresponding enumerated type.</p>
+<p>Enumerations are declared with the keyword enum.</p>
+</blockquote>
+<h2 id="enum-example">Enum example</h2>
+<pre><code class="lang-rust"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Dance</span></span> {
+    Tango(<span class="hljs-built_in">String</span>),
+    Salsa(<span class="hljs-built_in">String</span>),
+    Meringue(<span class="hljs-built_in">String</span>),
+}
+
+<span class="hljs-keyword">impl</span> Dance {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">phrase</span></span>(&amp;<span class="hljs-keyword">self</span>) {
+        <span class="hljs-keyword">match</span> <span class="hljs-keyword">self</span> {
+            Dance::Tango(c) =&gt; <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}: Time to Tango&quot;</span>, c),
+            Dance::Salsa(c) =&gt; <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}: Salsa time&quot;</span>, c),
+            Dance::Meringue(c) =&gt; <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}: Not your average meringue&quot;</span>, c),
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">new_tango</span></span>() -&gt; Dance {
+        Dance::Tango(<span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;New Tango&quot;</span>))
+    }
+}
+</code></pre>
+<p>Notice that enumerations can also have methods defined on them and in this case the phrase for a particular dance is defined.</p>
+<h2 id="match-expression">Match Expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/match-expr.html" target="_blank">Match expression specification</a></p>
+<blockquote>
+<p>A match expression branches on a pattern. The exact form of matching that occurs depends on the pattern. A match expression has a scrutinee expression, which is the value to compare to the patterns. The scrutinee expression and the patterns must have the same type.</p>
+</blockquote>
+<p>Match expressions are useful with enums as you can match on the enumerated items.</p>
+<p>Notice that in our earlier example we matched against <code>Dance::Tango</code>, etc using the match operator and then a statement is logged to standard output if a match evaluates to true.</p>
+<h2 id="if-let-expression">if let expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/if-expr.html#if-let-expressions" target="_blank">if let specification</a></p>
+<blockquote>
+<p>An if let expression is semantically similar to an if expression but in place of a condition expression it expects the keyword let followed by a pattern, an = and a scrutinee expression. If the value of the scrutinee matches the pattern, the corresponding block will execute. Otherwise, flow proceeds to the following else block if it exists. Like if expressions, if let expressions have a value determined by the block that is evaluated.</p>
+</blockquote>
+<p>If you look at the enum playground link you will see that I used an <code>if let</code> expression to unwrap the string value. </p>
+<h2 id="enum-playground">Enum playground</h2>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=181056a1656ba5aab3bfadfdd2e6336b" target="_blank">Playground</a></p>
+<h2 id="practice-exercise---enum">Practice Exercise -&gt; Enum</h2>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=54e0734415eb0c42750810099045038c" target="_blank">Practice Exercise -&gt; Enum</a></p>
+<h2 id="bread-crumb-navigation">Bread Crumb Navigation</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Previous</th>
+<th style="text-align:right">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x2190; <a href="methods.html">Methods</a></td>
+<td style="text-align:right"><a href="patterns.html">Patterns</a> &#x2192;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="methods.html" class="navigation navigation-prev " aria-label="Previous page: Methods">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="patterns.html" class="navigation navigation-next " aria-label="Next page: Patterns">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Enums","level":"1.15","depth":1,"next":{"title":"Patterns","level":"1.16","depth":1,"path":"docs/patterns.md","ref":"docs/patterns.md","articles":[]},"previous":{"title":"Methods","level":"1.14","depth":1,"path":"docs/methods.md","ref":"docs/methods.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","advanced-emoji","highlight","copy-code-button"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/enums.md","mtime":"2020-01-25T14:15:32.423Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T14:18:23.704Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

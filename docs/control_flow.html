@@ -1,0 +1,799 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Control Flow · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="functions.html" />
+    
+    
+    <link rel="prev" href="stdin-stdout-stderr.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="hello_world.html">
+            
+                <a href="hello_world.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="stdin-stdout-stderr.html">
+            
+                <a href="stdin-stdout-stderr.html">
+            
+                    
+                    Data Streams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ownership.html">
+            
+                <a href="ownership.html">
+            
+                    
+                    Ownership
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="borrowing.html">
+            
+                <a href="borrowing.html">
+            
+                    
+                    Borrowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="slices.html">
+            
+                <a href="slices.html">
+            
+                    
+                    Slices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="structs.html">
+            
+                <a href="structs.html">
+            
+                    
+                    Structs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="patterns.html">
+            
+                <a href="patterns.html">
+            
+                    
+                    Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="standard_library.html">
+            
+                <a href="standard_library.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="error_handling.html">
+            
+                <a href="error_handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="lifetimes.html">
+            
+                <a href="lifetimes.html">
+            
+                    
+                    Lifetimes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Control Flow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rust-workshop---control-flow">Rust Workshop - Control Flow</h1>
+<h2 id="sections">Sections:</h2>
+<ul>
+<li><a href="#rust-control-structures">Rust control structures</a></li>
+<li><a href="#if-expression">if expression</a></li>
+<li><a href="#if-let-expression">if let expression</a><ul>
+<li><a href="#if-let-example">if let example</a></li>
+</ul>
+</li>
+<li><a href="#match-expression">match expression</a><ul>
+<li><a href="#match-example">match example</a></li>
+</ul>
+</li>
+<li><a href="#loop-expression">loop expression</a><ul>
+<li><a href="#loop-example">loop example</a></li>
+</ul>
+</li>
+<li><a href="#while-expression">while expression</a><ul>
+<li><a href="#while-example">while example</a></li>
+</ul>
+</li>
+<li><a href="#while-let-expression">while let expression</a><ul>
+<li><a href="#while-let-example">while let example</a></li>
+</ul>
+</li>
+<li><a href="#for-expression">for expression</a><ul>
+<li><a href="#for-example">for example</a></li>
+</ul>
+</li>
+<li><a href="#break-expression">break expression</a><ul>
+<li><a href="#break-example">break example</a></li>
+</ul>
+</li>
+<li><a href="#continue-expression">continue expression</a><ul>
+<li><a href="#continue-example">continue example</a></li>
+</ul>
+</li>
+<li><a href="#label-expression">label expression</a><ul>
+<li><a href="#label-example">label example</a></li>
+</ul>
+</li>
+<li><a href="#practice-exercise-%5C--%3Econtrol-flow">Practice Exercise -&gt; Control Flow</a></li>
+<li><a href="#bread-crumb-navigation">Bread Crumb Navigation</a></li>
+</ul>
+<h2 id="rust-control-structures">Rust control structures</h2>
+<p>Rust has the following control structures:</p>
+<ul>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/if-expr.html#if-expressions" target="_blank">if</a></p>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/if-expr.html#if-let-expressions" target="_blank">if let</a></p>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/match-expr.html" target="_blank">match expressions</a></p>
+<ul>
+<li>similar to <code>switch</code> statements in other programming languages</li>
+</ul>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#infinite-loops" target="_blank">loop expression</a></p>
+<ul>
+<li>similar to <code>while(true) {}</code> c language or <code>for {}</code> in golang</li>
+</ul>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#predicate-loops" target="_blank">while expression</a></p>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#predicate-pattern-loops" target="_blank">while let expression</a></p>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#iterator-loops" target="_blank">for expression</a></p>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#break-expressions" target="_blank">break expression</a></p>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#continue-expressions" target="_blank">continue expression</a></p>
+</li>
+<li><p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#loop-labels" target="_blank">label</a></p>
+</li>
+</ul>
+<h2 id="if-expression">if expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/if-expr.html#if-expressions" target="_blank">if specification</a></p>
+<blockquote>
+<p>An if expression is a conditional branch in program control. The form of an if expression is a condition expression, followed by a consequent block, any number of else if conditions and blocks, and an optional trailing else block. The condition expressions must have type bool. If a condition expression evaluates to true, the consequent block is executed and any subsequent else if or else block is skipped. If a condition expression evaluates to false, the consequent block is skipped and any subsequent else if condition is evaluated. If all if and else if conditions evaluate to false then any else block is executed. An if expression evaluates to the same value as the executed block, or () if no block is evaluated. An if expression must have the same type in all situations.</p>
+</blockquote>
+<p>Rust has control structures as you may have seen them in other programming languages.</p>
+<p><em>You will not see parenthesis typically in the <code>if</code>control structures however.</em></p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">if</span> x &gt; <span class="hljs-number">0</span> {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;in here&quot;</span>);
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">10</span> {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;didn&apos;t get here&quot;</span>)
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;got in this block&quot;</span>)
+    }
+}
+</code></pre>
+<h2 id="if-let-expression">if let expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/if-expr.html#if-let-expressions" target="_blank">if let specification</a></p>
+<blockquote>
+<p>An if let expression is semantically similar to an if expression but in place of a condition expression it expects the keyword let followed by a pattern, an = and a scrutinee expression. If the value of the scrutinee matches the pattern, the corresponding block will execute. Otherwise, flow proceeds to the following else block if it exists. Like if expressions, if let expressions have a value determined by the block that is evaluated.</p>
+</blockquote>
+<h4 id="if-let-example">if let example</h4>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> num = <span class="hljs-literal">Some</span>(<span class="hljs-number">5</span>);
+
+    <span class="hljs-keyword">let</span> matchedNone: <span class="hljs-built_in">Option</span>&lt;<span class="hljs-keyword">i32</span>&gt; = <span class="hljs-literal">None</span>;
+
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> <span class="hljs-literal">Some</span>(x) = num {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;Matched {:?}&quot;</span>, x)
+    }
+
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> <span class="hljs-literal">Some</span>(x) = matchedNone {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;Matched {:?}&quot;</span>, x);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;Didn&apos;t match anything&quot;</span>)
+    }
+}
+</code></pre>
+<p>When you run this example you get: </p>
+<pre><code class="lang-bash">Matched 5
+Didn\<span class="hljs-string">&apos;t match anything
+</span></code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=56dd5b16e38d9abaad3a7a0b654848be" target="_blank">if let playground link</a></p>
+<h2 id="match-expression">match expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/match-expr.html" target="_blank">match specification</a></p>
+<blockquote>
+<p>A match expression branches on a pattern. The exact form of matching that occurs depends on the pattern. A match expression has a scrutinee expression, which is the value to compare to the patterns. The scrutinee expression and the patterns must have the same type.</p>
+</blockquote>
+<p><em>match is somewhat similar to switch statement like other programming languages.</em></p>
+<h4 id="match-example">match example</h4>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> num = <span class="hljs-number">7</span>;
+
+    <span class="hljs-keyword">match</span> num {
+        <span class="hljs-number">1</span> =&gt; <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;matched 1&quot;</span>),
+        <span class="hljs-number">2</span> | <span class="hljs-number">3</span> | <span class="hljs-number">5</span> =&gt; <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;matched prime&quot;</span>),
+        <span class="hljs-number">2</span> ... <span class="hljs-number">7</span> =&gt; <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;matched 2,3,4,5,6,7&quot;</span>),
+        _ =&gt; <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;Didn&apos;t match something&quot;</span>),
+    }
+
+    <span class="hljs-keyword">let</span> boolean = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-keyword">let</span> switch = <span class="hljs-keyword">match</span> boolean {
+        <span class="hljs-literal">true</span> =&gt; <span class="hljs-number">1</span>,
+        <span class="hljs-literal">false</span> =&gt; <span class="hljs-number">0</span>,
+    };
+
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{} -&gt; {}&quot;</span>, boolean, switch);
+}
+</code></pre>
+<h2 id="loop-expression">loop expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#infinite-loops" target="_blank">loop expression specification</a></p>
+<blockquote>
+<p>A loop expression repeats execution of its body continuously: <code>loop { println!(&quot;I live.&quot;); }</code>.</p>
+<p>A loop expression without an associated break expression is diverging and has type <code>!</code>. A loop expression containing associated break expression(s) may terminate, and must have type compatible with the value of the break expression(s).</p>
+</blockquote>
+<h4 id="loop-example">loop example</h4>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">loop</span> {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;Hello People!&quot;</span>);
+    }
+}
+</code></pre>
+<p>This will continuously print &quot;Hello People!&quot; to standard output since there is no terminating condition or <code>break</code> expression.</p>
+<h2 id="while-expression">while expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#predicate-loops" target="_blank">while expression specification</a></p>
+<blockquote>
+<p>A while loop begins by evaluating the boolean loop conditional expression. If the loop conditional expression evaluates to true, the loop body block executes, then control returns to the loop conditional expression. If the loop conditional expression evaluates to false, the while expression completes.</p>
+</blockquote>
+<h4 id="while-example">while example</h4>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> number: <span class="hljs-keyword">i32</span> = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> sum: <span class="hljs-keyword">i32</span> = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span> number &lt; <span class="hljs-number">100</span> {
+        sum += number;
+        number += <span class="hljs-number">1</span>;
+    }
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, sum);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=299090103f4be9765c6d2dfaddb52441" target="_blank">while example playground</a></p>
+<h2 id="while-let-expression">while let expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#predicate-pattern-loops" target="_blank">while let specification</a></p>
+<blockquote>
+<p>A while let loop is semantically similar to a while loop but in place of a condition expression it expects the keyword let followed by a pattern, an =, a scrutinee expression and a block expression. If the value of the scrutinee matches the pattern, the loop body block executes then control returns to the pattern matching statement. Otherwise, the while expression completes.</p>
+</blockquote>
+<h2 id="while-let-example">while let example</h2>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> primes = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>];
+
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">let</span> <span class="hljs-literal">Some</span>(y) = primes.pop() {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;y = {}&quot;</span>, y);
+    }
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=2d34940b85a215403c7d10cc5f1a6f3f" target="_blank">while let playground</a></p>
+<h2 id="for-expression">for expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#iterator-loops" target="_blank">for expression specification</a></p>
+<blockquote>
+<p>A for expression is a syntactic construct for looping over elements provided by an implementation of <code>std::iter::IntoIterator</code>. If the iterator yields a value, that value is matched against the irrefutable pattern, the body of the loop is executed, and then control returns to the head of the for loop. If the iterator is empty, the for expression completes.</p>
+</blockquote>
+<h4 id="for-example">for example</h4>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> numbers = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>];
+
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> multiplied_numbers = <span class="hljs-built_in">Vec</span>::new();
+    <span class="hljs-keyword">for</span> prime <span class="hljs-keyword">in</span> numbers {
+        multiplied_numbers.push(prime * <span class="hljs-number">5</span>);
+    }
+
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{:?}&quot;</span>, multiplied_numbers);
+
+    <span class="hljs-built_in">assert_eq!</span>(multiplied_numbers[<span class="hljs-number">0</span>], <span class="hljs-number">15</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=5a7f3aa7489760a1b09df4f9d07bb908" target="_blank">for example playground</a></p>
+<h2 id="break-expression">break expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#break-expressions" target="_blank">break expression specification</a></p>
+<blockquote>
+<p>When break is encountered, execution of the associated loop body is immediately terminated</p>
+<p>A break expression is normally associated with the innermost loop, for or while loop enclosing the break expression, but a label can be used to specify which enclosing loop is affected.</p>
+</blockquote>
+<h4 id="break-example">break example</h4>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> phrases = <span class="hljs-built_in">vec!</span>[<span class="hljs-string">&quot;Here&quot;</span>, <span class="hljs-string">&quot;I&quot;</span>, <span class="hljs-string">&quot;Am&quot;</span>];
+
+    <span class="hljs-keyword">for</span> phrase <span class="hljs-keyword">in</span> phrases {
+        <span class="hljs-keyword">if</span> phrase == <span class="hljs-string">&quot;I&quot;</span> {
+            <span class="hljs-keyword">break</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, phrase);
+        }
+    }
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=62054bc7b559f87573012281d5d74f63" target="_blank">break example playground</a></p>
+<h2 id="continue-expression">continue expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#continue-expressions" target="_blank">continue expression specification</a></p>
+<blockquote>
+<p>When continue is encountered, the current iteration of the associated loop body is immediately terminated, returning control to the loop head. In the case of a while loop, the head is the conditional expression controlling the loop. In the case of a for loop, the head is the call-expression controlling the loop.</p>
+<p>Like break, continue is normally associated with the innermost enclosing loop, but continue &apos;label may be used to specify the loop affected. A continue expression is only permitted in the body of a loop.</p>
+</blockquote>
+<h4 id="continue-example">continue example</h4>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> numbers = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">3</span>, <span class="hljs-number">5</span> , <span class="hljs-number">7</span>, <span class="hljs-number">11</span>];
+
+    <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> numbers {
+        <span class="hljs-keyword">if</span> num == <span class="hljs-number">7</span> {
+            <span class="hljs-keyword">continue</span>
+        }
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, num);
+    }
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=413e58793df5ccbf29ae453ecbe3bc2f" target="_blank">continue example playground</a></p>
+<h2 id="label-expression">label expression</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/loop-expr.html#loop-labels" target="_blank">label expression specification</a></p>
+<blockquote>
+<p>A loop expression may optionally have a label. The label is written as a lifetime preceding the loop expression, as in &apos;foo: loop { break &apos;foo; }, &apos;bar: while false {}, &apos;humbug: for _ in 0..0 {}. If a label is present, then labeled break and continue expressions nested within this loop may exit out of this loop or return control to its head. See break expressions and continue expressions.</p>
+</blockquote>
+<h2 id="label-example">label example</h2>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> numbers = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>];
+    <span class="hljs-symbol">&apos;outer</span>: <span class="hljs-keyword">loop</span> {
+        <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> &amp;numbers {
+            <span class="hljs-keyword">if</span> *num == <span class="hljs-number">3</span> {
+                <span class="hljs-keyword">break</span> <span class="hljs-symbol">&apos;outer</span>;   
+            }
+            <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, *num * <span class="hljs-number">5</span>);
+        }
+    }
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=0fb219093c247e29cd15d861e7672e84" target="_blank">label example playground</a></p>
+<h2 id="practice-exercise---control-flow">Practice Exercise -&gt; Control Flow</h2>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=f0374485cab86b467f22bfae93cc7548" target="_blank">Practice Exercise -&gt; Control Flow</a></p>
+<h2 id="bread-crumb-navigation">Bread Crumb Navigation</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Previous</th>
+<th style="text-align:right">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x2190;  <a href="stdin-stdout-stderr.html">Data Streams</a></td>
+<td style="text-align:right"><a href="functions.html">Functions</a> &#x2192;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="stdin-stdout-stderr.html" class="navigation navigation-prev " aria-label="Previous page: Data Streams">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="functions.html" class="navigation navigation-next " aria-label="Next page: Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Control Flow","level":"1.5","depth":1,"next":{"title":"Functions","level":"1.6","depth":1,"path":"docs/functions.md","ref":"docs/functions.md","articles":[]},"previous":{"title":"Data Streams","level":"1.4","depth":1,"path":"docs/stdin-stdout-stderr.md","ref":"docs/stdin-stdout-stderr.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","advanced-emoji","highlight","copy-code-button"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/control_flow.md","mtime":"2020-01-25T14:04:11.618Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T14:18:23.704Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

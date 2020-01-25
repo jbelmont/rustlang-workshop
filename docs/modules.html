@@ -1,0 +1,769 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Modules · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="standard_library.html" />
+    
+    
+    <link rel="prev" href="patterns.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="hello_world.html">
+            
+                <a href="hello_world.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="stdin-stdout-stderr.html">
+            
+                <a href="stdin-stdout-stderr.html">
+            
+                    
+                    Data Streams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ownership.html">
+            
+                <a href="ownership.html">
+            
+                    
+                    Ownership
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="borrowing.html">
+            
+                <a href="borrowing.html">
+            
+                    
+                    Borrowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="slices.html">
+            
+                <a href="slices.html">
+            
+                    
+                    Slices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="structs.html">
+            
+                <a href="structs.html">
+            
+                    
+                    Structs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="patterns.html">
+            
+                <a href="patterns.html">
+            
+                    
+                    Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="standard_library.html">
+            
+                <a href="standard_library.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="error_handling.html">
+            
+                <a href="error_handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="lifetimes.html">
+            
+                <a href="lifetimes.html">
+            
+                    
+                    Lifetimes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Modules</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rust-workshop---modules">Rust Workshop - Modules</h1>
+<h2 id="sections">Sections:</h2>
+<ul>
+<li><a href="#visibility">Visibility</a><ul>
+<li><a href="#privacy">Privacy</a></li>
+<li><a href="#pub-keyword">pub keyword</a></li>
+</ul>
+</li>
+<li><a href="#module-tree">Module Tree</a><ul>
+<li><a href="#absolute-path">absolute path</a></li>
+<li><a href="#relative-path">relative path</a></li>
+<li><a href="#when-to-choose-absolute-or-relative">when to choose absolute or relative</a></li>
+</ul>
+</li>
+<li><a href="#use-keyword">use keyword</a></li>
+<li><a href="#module-separation">module separation</a><ul>
+<li><a href="#module-separation-example">module separation example</a></li>
+</ul>
+</li>
+<li><a href="#bread-crumb-navigation">Bread Crumb Navigation</a></li>
+</ul>
+<h2 id="visibility">Visibility</h2>
+<p>In rust items in a module have private visibility turned on by default.</p>
+<p>The privacy rules in rust extend to the following items:</p>
+<ul>
+<li>functions</li>
+<li>methods</li>
+<li>structs</li>
+<li>enums</li>
+<li>modules</li>
+<li>constants</li>
+</ul>
+<p>Additionally for structs their fields are private by default.</p>
+<h4 id="privacy">Privacy</h4>
+<p>Let use look at the following example on privacy rules</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-comment">// will not compile since log is private</span>
+    <span class="hljs-comment">// usage1::log();</span>
+
+    usage1::echo_message();
+}
+
+<span class="hljs-keyword">mod</span> usage1 {
+    <span class="hljs-meta">#[allow(dead_code)]</span>
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">log</span></span>() {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, <span class="hljs-string">&quot;Log my message&quot;</span>);
+    }
+
+    <span class="hljs-keyword">pub</span> <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">echo_message</span></span>() {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, <span class="hljs-string">&quot;I can by called!&quot;</span>);
+    }
+}
+</code></pre>
+<p>We can call the <code>usage1</code> module because other items can access other items that exist in the same module, even though they are private.</p>
+<p>We called the <code>usage1</code> module using relative path which we will talk about later in this section</p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=469ff4aea30607e07b3260e85e0a6073" target="_blank">privacy playground</a></p>
+<h4 id="pub-keyword">pub keyword</h4>
+<p>The <code>pub</code> keyword is a visibility modifier that lets us override the default <code>private</code> visibility in rust.</p>
+<p>This helps ensure that proper encapsulation of modules is enforced. This also goes hand in hand with the principle of least privilege.</p>
+<p>A module should only be able to access the {structs,constants,functions,enums,modules} that are necessary for its intended purpose.</p>
+<p><em>When we use the <code>pub</code> keyword we modify <code>{structs,constants,functions,enums,modules}</code> for usage outside of the module in which they are defined and therefore can be used in other modules that there were not defined in.</em></p>
+<p>Let us look at an example to better explain this concept:</p>
+<pre><code class="lang-rust"><span class="hljs-comment">// src/species.rs</span>
+<span class="hljs-keyword">mod</span> animal {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">traits</span></span>() {}
+}
+
+<span class="hljs-comment">// src/person.rs</span>
+<span class="hljs-keyword">mod</span> human {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">traits</span></span>() {}
+}
+</code></pre>
+<p>If we were to try to access <code>animal::traits()</code> in the <code>human</code> module we would get a compile time error since animal is a private module and its function traits is private as well.</p>
+<p>If we were to change its visibility to public using the <code>pub</code> keyword we could access it on the person module.</p>
+<pre><code class="lang-rust"><span class="hljs-comment">// src/species.rs</span>
+<span class="hljs-keyword">pub</span> <span class="hljs-keyword">mod</span> animal {
+    <span class="hljs-keyword">pub</span> <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">traits</span></span>() {}
+}
+
+<span class="hljs-comment">// src/person.rs</span>
+<span class="hljs-keyword">mod</span> human {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">traits</span></span>() {}
+}
+</code></pre>
+<p>Notice that we used the <code>pub</code> keyword in the <code>mod</code> keyword and in the <code>fn</code> in order to call the traits function that lives in the animal module</p>
+<h2 id="module-tree">Module Tree</h2>
+<p><a href="https://doc.rust-lang.org/reference/items/modules.html" target="_blank">modules specification</a></p>
+<blockquote>
+<p>A module is a container for zero or more items.</p>
+<p>A module item is a module, surrounded in braces, named, and prefixed with the keyword mod. A module item introduces a new, named module into the tree of modules making up a crate. Modules can nest arbitrarily.</p>
+<p>Modules and types share the same namespace. Declaring a named type with the same name as a module in scope is forbidden: that is, a type definition, trait, struct, enumeration, union, type parameter or crate can&apos;t shadow the name of a module in scope, or vice versa. Items brought into scope with use also have this restriction.</p>
+</blockquote>
+<p>Rust needs to know the path of a function or module just like in Unix/Linux you can&apos;t call a bash script without specifying its path or editing the <code>PATH</code> variable so that the shell knows where to find the script you are calling.</p>
+<p><a href="https://doc.rust-lang.org/book/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html#paths-for-referring-to-an-item-in-the-module-tree" target="_blank">Module Tree Path</a></p>
+<p>A path can take two forms:</p>
+<ul>
+<li><p>An absolute path starts from a crate root by using a crate name or a literal crate.</p>
+</li>
+<li><p>A relative path starts from the current module and uses self, super, or an identifier in the current module.</p>
+</li>
+</ul>
+<h4 id="absolute-path">absolute path</h4>
+<p>You can use the <code>crate</code> keyword in order to specify the absolute path for where a module lives.</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-comment">// relative path usage</span>
+    <span class="hljs-keyword">let</span> soldier = crate::military::Soldier::new(<span class="hljs-string">&quot;John Rambo&quot;</span>, <span class="hljs-number">32</span>, <span class="hljs-string">&quot;SFC&quot;</span>, <span class="hljs-number">12</span>);
+    <span class="hljs-built_in">assert_eq!</span>(soldier.name, <span class="hljs-string">&quot;John Rambo&quot;</span>);
+    <span class="hljs-comment">// assert_eq!(soldier.age, 32);</span>
+}
+
+<span class="hljs-keyword">mod</span> military {
+    <span class="hljs-meta">#[allow(dead_code)]</span>
+    <span class="hljs-keyword">pub</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Soldier</span></span> {
+        <span class="hljs-keyword">pub</span> name: <span class="hljs-built_in">String</span>,
+        age: <span class="hljs-keyword">u32</span>,
+        rank: <span class="hljs-built_in">String</span>,
+        years_of_service: <span class="hljs-keyword">u32</span>,
+    }
+    <span class="hljs-keyword">impl</span> Soldier {
+        <span class="hljs-keyword">pub</span> <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">new</span></span>(name: &amp;<span class="hljs-keyword">str</span>, age: <span class="hljs-keyword">u32</span>, rank: &amp;<span class="hljs-keyword">str</span>, years_of_service: <span class="hljs-keyword">u32</span>) -&gt; Soldier {
+            Soldier {
+                name: <span class="hljs-built_in">String</span>::from(name),
+                age: age,
+                rank: <span class="hljs-built_in">String</span>::from(rank),
+                years_of_service: years_of_service,
+            }
+        }
+    }
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=383e42136fbbd07da238715abb64717e" target="_blank">absolute path playground</a></p>
+<p>Notice that we used the <code>crate</code> keyword and then used called the <code>military</code> module. </p>
+<p>This usage is known as using the absolute path.</p>
+<p>In order for us to use the Soldier struct outside of the <code>military</code> module we neen to change its visibility to public.</p>
+<p><em>Additionally each field that we want to use outside of the military module needs to be made public so that is why we added the <code>pub</code> access modifier to the <code>name</code> field in the <code>Soldier</code> struct.</em></p>
+<h4 id="relative-path">relative path</h4>
+<p>We can also call modules and its items by using their relative path.</p>
+<p>Let us look at an example to further clarify this idea:</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> person = species::Human::new(<span class="hljs-string">&quot;John Rambo&quot;</span>, <span class="hljs-number">32</span>, <span class="hljs-string">&quot;Male&quot;</span>);
+    <span class="hljs-built_in">assert_eq!</span>(person.name, <span class="hljs-string">&quot;John Rambo&quot;</span>);
+}
+
+<span class="hljs-keyword">mod</span> species {
+    <span class="hljs-meta">#[allow(dead_code)]</span>
+    <span class="hljs-keyword">pub</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Human</span></span> {
+        <span class="hljs-keyword">pub</span> name: <span class="hljs-built_in">String</span>,
+        age: <span class="hljs-keyword">u32</span>,
+        gender: <span class="hljs-built_in">String</span>,
+    }
+
+    <span class="hljs-keyword">impl</span> Human {
+        <span class="hljs-keyword">pub</span> <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">new</span></span>(name: &amp;<span class="hljs-keyword">str</span>, age: <span class="hljs-keyword">u32</span>, gender: &amp;<span class="hljs-keyword">str</span>) -&gt; Human {
+            Human {
+                name: <span class="hljs-built_in">String</span>::from(name),
+                age: age,
+                gender: <span class="hljs-built_in">String</span>::from(gender),
+            }
+        }
+    }
+}
+</code></pre>
+<p>Notice that we called the method in the <code>species</code> module using relative path syntax.</p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=e58aa3191adebfd9fbdbf89533447a6d" target="_blank">relative path playground</a></p>
+<h4 id="when-to-choose-absolute-or-relative">when to choose absolute or relative</h4>
+<p>Each software project will need to decide whether to use absolute or relative.</p>
+<p>If we go back to the previous example and moved species module to another module then the absolute path of the module will have changed but the relative path would still be the same.</p>
+<p>So to clarify if we created another module in another module called <code>animal_kingdom</code> then the absolute path would be:</p>
+<p><code>animal_kingdom::species::Human::new(&quot;John Rambo&quot;, 32, &quot;Male&quot;)</code></p>
+<p>while the relative path would still just be:</p>
+<p><code>species::Human::new(&quot;John Rambo&quot;, 32, &quot;Male&quot;)</code></p>
+<p>if we had a function in the same example like this:</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">mod</span> species {
+    <span class="hljs-meta">#[allow(dead_code)]</span>
+    <span class="hljs-keyword">pub</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Human</span></span> {
+        <span class="hljs-keyword">pub</span> name: <span class="hljs-built_in">String</span>,
+        age: <span class="hljs-keyword">u32</span>,
+        gender: <span class="hljs-built_in">String</span>,
+    }
+
+    <span class="hljs-keyword">impl</span> Human {
+        <span class="hljs-keyword">pub</span> <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">new</span></span>(name: &amp;<span class="hljs-keyword">str</span>, age: <span class="hljs-keyword">u32</span>, gender: &amp;<span class="hljs-keyword">str</span>) -&gt; Human {
+            Human {
+                name: <span class="hljs-built_in">String</span>::from(name),
+                age: age,
+                gender: <span class="hljs-built_in">String</span>::from(gender),
+            }
+        }
+    }
+}
+
+<span class="hljs-keyword">pub</span> <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">logging_example</span></span>() {
+    crate::species::Human::new(<span class="hljs-string">&quot;John Rambo&quot;</span>, <span class="hljs-number">32</span>, <span class="hljs-string">&quot;Male&quot;</span>);
+}
+</code></pre>
+<p>If we were to move the logging_example function to another module then the absolute path <code>new</code> method call would stay the same but the relative path for the <code>logging_example</code> function would need to be updated.</p>
+<h2 id="use-keyword">use keyword</h2>
+<p>The <code>use</code> keyword is used to bring items into scope in rust</p>
+<p>Let us look at an example of the <code>use</code> keyword</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> pov = Truck::new(<span class="hljs-string">&quot;Ford&quot;</span>, <span class="hljs-string">&quot;F150&quot;</span>, <span class="hljs-number">2019</span>);
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, pov.message());
+}
+
+<span class="hljs-keyword">use</span> vehicle::Truck;
+
+<span class="hljs-keyword">mod</span> vehicle {
+    <span class="hljs-keyword">pub</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Truck</span></span> {
+        make: <span class="hljs-built_in">String</span>,
+        model: <span class="hljs-built_in">String</span>,
+        year: <span class="hljs-keyword">u32</span>,
+    }
+
+    <span class="hljs-keyword">impl</span> Truck {
+        <span class="hljs-keyword">pub</span> <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">new</span></span>(make: &amp;<span class="hljs-keyword">str</span>, model: &amp;<span class="hljs-keyword">str</span>, year: <span class="hljs-keyword">u32</span>) -&gt; Truck {
+            Truck {
+                make: <span class="hljs-built_in">String</span>::from(make),
+                model: <span class="hljs-built_in">String</span>::from(model),
+                year: year,
+            }
+        }
+
+        <span class="hljs-keyword">pub</span> <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">message</span></span>(&amp;<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-built_in">String</span> {
+            <span class="hljs-built_in">format!</span>(
+                <span class="hljs-string">&quot;Make: {},\nModel: {}\nYear: {}&quot;</span>,
+                <span class="hljs-keyword">self</span>.make,
+                <span class="hljs-keyword">self</span>.model,
+                <span class="hljs-keyword">self</span>.year,
+            )
+        }
+    }
+}
+</code></pre>
+<p>Notice that we were able to call the Truck method and its methods without specifying the vehicle module.</p>
+<p>This is because the <code>use</code> statement of <code>use vehicle::Truck;</code> brought the Truck struct into scope for the current module.</p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=9ab9b22825a691ce2111c1cfe5dc3fa9" target="_blank">use keyword playground</a></p>
+<h2 id="module-separation">module separation</h2>
+<p>Modules can be separated into different files for further organization.</p>
+<p>When you use the <code>;</code> (semicolon) instead of using a block statement then rust knows to lad teh contents of the module from another file with the sanme name as the module.</p>
+<h4 id="module-separation-example">module separation example</h4>
+<p>There is an example of this in the koans crate in the workshop if you look at:</p>
+<p><a href="../koans/src/modules.rs">Modules</a> =&gt; <code>pub mod usage;</code></p>
+<p>The statement <code>pub mod usage</code> loads the content of <a href="../koans/src/modules/usage.rs">usage</a></p>
+<h2 id="bread-crumb-navigation">Bread Crumb Navigation</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Previous</th>
+<th style="text-align:right">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x2190; <a href="patterns.html">Patterns</a></td>
+<td style="text-align:right"><a href="standard_library.html">Standard Library</a> &#x2192;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="patterns.html" class="navigation navigation-prev " aria-label="Previous page: Patterns">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="standard_library.html" class="navigation navigation-next " aria-label="Next page: Standard Library">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Modules","level":"1.17","depth":1,"next":{"title":"Standard Library","level":"1.18","depth":1,"path":"docs/standard_library.md","ref":"docs/standard_library.md","articles":[]},"previous":{"title":"Patterns","level":"1.16","depth":1,"path":"docs/patterns.md","ref":"docs/patterns.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","advanced-emoji","highlight","copy-code-button"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/modules.md","mtime":"2020-01-02T00:29:42.409Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T14:18:23.704Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

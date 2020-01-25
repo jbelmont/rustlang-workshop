@@ -1,0 +1,1049 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Standard Library · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="error_handling.html" />
+    
+    
+    <link rel="prev" href="modules.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="hello_world.html">
+            
+                <a href="hello_world.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="stdin-stdout-stderr.html">
+            
+                <a href="stdin-stdout-stderr.html">
+            
+                    
+                    Data Streams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ownership.html">
+            
+                <a href="ownership.html">
+            
+                    
+                    Ownership
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="borrowing.html">
+            
+                <a href="borrowing.html">
+            
+                    
+                    Borrowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="slices.html">
+            
+                <a href="slices.html">
+            
+                    
+                    Slices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="structs.html">
+            
+                <a href="structs.html">
+            
+                    
+                    Structs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="patterns.html">
+            
+                <a href="patterns.html">
+            
+                    
+                    Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="standard_library.html">
+            
+                <a href="standard_library.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="error_handling.html">
+            
+                <a href="error_handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="lifetimes.html">
+            
+                <a href="lifetimes.html">
+            
+                    
+                    Lifetimes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Standard Library</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rust-workshop---standard-library">Rust Workshop - Standard Library</h1>
+<h2 id="sections">Sections:</h2>
+<ul>
+<li><a href="#rust-standard-library">Rust Standard Library</a><ul>
+<li><a href="#common-collections">Common Collections</a></li>
+<li><a href="#input%5C/output-%5C(IO%5C">Input/Output (IO)</a>)</li>
+<li><a href="#multithreading">Multithreading</a></li>
+<li><a href="#primitive-types">Primitive Types</a></li>
+<li><a href="#the-rust-prelude">The Rust Prelude</a></li>
+<li><a href="#threading">Threading</a></li>
+</ul>
+</li>
+<li><a href="#common-collections">Common Collections</a><ul>
+<li><a href="#vectors">Vectors</a></li>
+<li><a href="#hash-maps">Hash Maps</a></li>
+<li><a href="#strings">Strings</a></li>
+</ul>
+</li>
+<li><a href="#bread-crumb-navigation">Bread Crumb Navigation</a></li>
+</ul>
+<h2 id="rust-standard-library">Rust Standard Library</h2>
+<p>Rust has a standard library much like other programming languages. </p>
+<p>From what I have learned Rust seems to follow the philosophy of C/C++ of maintaining a smaller standard library.</p>
+<p>Rust does not proscribe to Python&apos;s Batteries included mentality for standard libraries.</p>
+<h4 id="common-collections">Common Collections</h4>
+<p>Rust maintains a smaller standard library core and uses common collections such as:</p>
+<ul>
+<li>Sequences:<ul>
+<li><a href="https://doc.rust-lang.org/std/vec/struct.Vec.html" target="_blank">Vectors</a></li>
+<li><a href="https://doc.rust-lang.org/std/collections/struct.VecDeque.html" target="_blank">VecDeque</a></li>
+<li><a href="https://doc.rust-lang.org/std/collections/struct.LinkedList.html" target="_blank">LinkedList</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Maps:<ul>
+<li><a href="https://doc.rust-lang.org/std/collections/struct.HashMap.html" target="_blank">HashMap</a></li>
+<li><a href="https://doc.rust-lang.org/std/collections/struct.BTreeMap.html" target="_blank">BTreeMap</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Sets:<ul>
+<li><a href="https://doc.rust-lang.org/std/collections/struct.HashSet.html" target="_blank">HashSet</a></li>
+<li><a href="https://doc.rust-lang.org/std/collections/struct.BTreeSet.html" target="_blank">BTreeSet</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Binary Trees:<ul>
+<li><a href="https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html" target="_blank">Binary Heap</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="inputoutput-io">Input/Output (IO)</h4>
+<p>Rust has a package called <a href="https://doc.rust-lang.org/std/io/index.html" target="_blank">std::io</a> for dealing with input and output.</p>
+<p>Rust deals with common types of IO such as:</p>
+<ul>
+<li>io<ul>
+<li>commonly needed io operations module</li>
+<li><a href="https://doc.rust-lang.org/std/io/index.html" target="_blank">io</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>files<ul>
+<li>filesystem module</li>
+<li><a href="https://doc.rust-lang.org/std/fs/index.html" target="_blank">fs</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>TCP/UDP Communication <ul>
+<li>This module provides networking functionality for the Transmission Control and User Datagram Protocols, as well as types for IP and socket addresses.</li>
+<li><a href="https://doc.rust-lang.org/std/net/index.html" target="_blank">net</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="multithreading">Multithreading</h4>
+<p>Rust has a package for multithreading operations called <a href="https://doc.rust-lang.org/std/thread/index.html" target="_blank">std::thread</a></p>
+<h4 id="primitive-types">Primitive Types</h4>
+<p><a href="https://doc.rust-lang.org/std/index.html#primitives" target="_blank">Primitives in Standard Library</a></p>
+<h4 id="the-rust-prelude">The Rust Prelude</h4>
+<p><a href="https://doc.rust-lang.org/std/prelude/index.html" target="_blank">Prelude</a></p>
+<blockquote>
+<p>The prelude is the list of things that Rust automatically imports into every Rust program. It&apos;s kept as small as possible, and is focused on things, particularly traits, which are used in almost every single Rust program.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> std;
+<span class="hljs-keyword">use</span> std::prelude::v1::*;
+</code></pre>
+<p>The snippet of code above is inserted into the root of every crate in every module, so you do not need to have a <code>use</code> statement to bring them into scope in any rust module.</p>
+<p><code>std::prelude::v1</code> contents:</p>
+<ul>
+<li><code>std::marker::{Copy, Send, Sized, Sync, Unpin}</code><ul>
+<li>The marker traits indicate fundamental properties of types.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::ops::{Drop, Fn, FnMut, FnOnce}</code> <ul>
+<li>Various operations for both destructors and overloading ().</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::mem::drop</code><ul>
+<li>a convenience function for explicitly dropping a value.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::boxed::Box</code> <ul>
+<li>a way to allocate values on the heap.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::borrow::ToOwned</code> <ul>
+<li>The conversion trait that defines to_owned, the generic method for creating an owned type from a borrowed type.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::clone::Clone</code><ul>
+<li>the ubiquitous trait that defines clone, the method for producing a copy of a value.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::cmp::{PartialEq, PartialOrd, Eq, Ord }</code> <ul>
+<li>The comparison traits, which implement the comparison operators and are often seen in trait bounds.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::convert::{AsRef, AsMut, Into, From}</code> <ul>
+<li>Generic conversions, used by savvy API authors to create overloaded methods.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::default::Default</code><ul>
+<li>types that have default values.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::iter::{Iterator, Extend, IntoIterator, DoubleEndedIterator, ExactSizeIterator}</code><ul>
+<li>Iterators of various kinds.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::option::Option::{self, Some, None}</code> <ul>
+<li>A type which expresses the presence or absence of a value. This type is so commonly used, its variants are also exported.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::result::Result::{self, Ok, Err}</code><ul>
+<li>A type for functions that may succeed or fail. Like Option, its variants are exported as well.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::string::{String, ToString}</code><ul>
+<li>heap allocated strings.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>std::vec::Vec</code> <ul>
+<li>a growable, heap-allocated vector.</li>
+</ul>
+</li>
+</ul>
+<h4 id="threading">Threading</h4>
+<blockquote>
+<p>An executing Rust program consists of a collection of native OS threads, each with their own stack and local state. Threads can be named, and provide some built-in support for low-level synchronization.</p>
+</blockquote>
+<p><a href="https://doc.rust-lang.org/std/thread/index.html" target="_blank">thread module</a></p>
+<h6 id="sync-module">sync module</h6>
+<p>The <a href="https://doc.rust-lang.org/std/sync/index.html" target="_blank">sync</a> module contains useful synchronization primitives.</p>
+<h6 id="atomic-module">atomic module</h6>
+<p>The [atomic] module provides primitive shared-memory communication between threads, and are the building blocks of other concurrent types</p>
+<h6 id="mpsc-module">mpsc module</h6>
+<p>The <a href="https://doc.rust-lang.org/std/sync/mpsc/index.html" target="_blank">mpsc</a> module provides message-based communication over channels.</p>
+<h2 id="common-collections">Common Collections</h2>
+<blockquote>
+<p>Rust&apos;s standard collection library provides efficient implementations of the most common general purpose programming data structures. By using the standard implementations, it should be possible for two libraries to communicate without significant data conversion.</p>
+</blockquote>
+<p>Rust has collections types for <code>Sequences</code>, <code>Maps</code>, <code>Sets</code> and <code>Binary Trees</code> but for the most part you will only ever need to use Vectors =&gt; <code>Vec</code> and Maps =&gt; <code>HashMaps</code>.</p>
+<h4 id="vectors">Vectors</h4>
+<p><a href="https://doc.rust-lang.org/std/vec/struct.Vec.html" target="_blank">Vectors</a></p>
+<p>By and large the <code>Vec</code> collection will be the collection type you use most often in rust and has many useful methods you can use.</p>
+<p>We have already seen the <code>Vec</code> type throughout the workshop but haven&apos;t formally talked about them yet.</p>
+<p>A Vector is a resizable array and like slices their size cannot be known at compile time.</p>
+<p>Vectors can grow and shrink at any time.</p>
+<p>A vector can be represented by 3 <code>parameters</code>:</p>
+<ul>
+<li>Represent a <code>pointer</code> to data</li>
+<li>Number of existing elements aka <code>length</code></li>
+<li>Amount of space that is allocated that is allocated for future elements aka <code>capacity</code></li>
+</ul>
+<h6 id="create-vector-with-new-method">Create vector with new method</h6>
+<p>You can create a vector by calling the <code>new</code> method defined in the <code>Vec&lt;T&gt;</code> struct</p>
+<pre><code class="lang-rust"><span class="hljs-comment">// create a vector with new method</span>
+<span class="hljs-keyword">let</span> numbers = <span class="hljs-built_in">Vec</span>::new();
+</code></pre>
+<h6 id="create-vector-using-vec-macro">Create vector using <code>vec!</code> macro</h6>
+<p>You can also use the <code>vec!</code> macro that is defined in the standard library to create a new vector.</p>
+<p>The <code>vec!</code> macro is defined like this in standard library:</p>
+<pre><code class="lang-rust">...................................
+<span class="hljs-built_in">macro_rules!</span> vec {
+    ($elem:expr; $n:expr) =&gt; (
+        $crate::vec::from_elem($elem, $n)
+    );
+    ($($x:expr),*) =&gt; (
+        &lt;[_]&gt;::into_vec(<span class="hljs-keyword">box</span> [$($x),*])
+    );
+    ($($x:expr,)*) =&gt; ($crate::<span class="hljs-built_in">vec!</span>[$($x),*])
+}
+...................................
+</code></pre>
+<p>By using the <code>vec!</code> macros you can create a new vector using the array syntax that we previously used:</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> primes_array: [<span class="hljs-keyword">u32</span>; <span class="hljs-number">5</span>] = [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>];
+
+    <span class="hljs-keyword">for</span> prime <span class="hljs-keyword">in</span> &amp;primes_array {
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, prime);
+    }
+
+    <span class="hljs-keyword">let</span> primes_vec_macro = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>];
+    <span class="hljs-keyword">for</span> (index, prime) <span class="hljs-keyword">in</span> primes_vec_macro.iter().enumerate() {
+        <span class="hljs-built_in">assert_eq!</span>(&amp;primes_array[index], prime);
+    }
+}
+</code></pre>
+<p>Notice that in the <code>primes_array</code> we created an array and specified the type and capacity, while in the <code>primes_vec_macro</code> we simply passed in the values and the <code>vec!</code> macro will infer the type and set a capacity for the vector for us.</p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=4a84d5ae20b24d0fa4cfb29365d234b4" target="_blank">array and vector comparison playground</a></p>
+<h5 id="vector-methods">Vector methods</h5>
+<p><a href="https://doc.rust-lang.org/1.30.0/std/vec/struct.Vec.html#methods" target="_blank">Vector Methods</a></p>
+<p>There are many methods defined in the standard library but we will only go over some of them in this workshop. </p>
+<p>Please read the standard library about them as you need them.</p>
+<p>We already showed one of the methods earlier which was <code>Vec::new()</code> which was used to create a new empty <code>Vec&lt;T&gt;</code> type.</p>
+<h6 id="vec-get-method">Vec <code>get</code> method</h6>
+<p>The <a href="https://doc.rust-lang.org/1.30.0/std/vec/struct.Vec.html#method.get" target="_blank">get</a> method is much safer than accessing by index which can result in an out of bounds indexing panic during runtime.</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> primes_first_three = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>];
+
+    <span class="hljs-built_in">assert_eq!</span>(primes_first_three[<span class="hljs-number">2</span>], <span class="hljs-number">5</span>);
+
+    <span class="hljs-comment">// assert_eq!(primes_first_three[4], 0);</span>
+
+    <span class="hljs-built_in">assert_eq!</span>(primes_first_three.get(<span class="hljs-number">4</span>), <span class="hljs-literal">None</span>);
+}
+</code></pre>
+<p>If you were to uncomment the direct vector index it would be a runtime panic.</p>
+<p>The <code>get</code> is much safer and you can check if a vector has a value without causing a runtime panic like this:</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> <span class="hljs-literal">None</span> = primes_first_three.get(<span class="hljs-number">4</span>) {
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, <span class="hljs-string">&quot;Invalid index here!&quot;</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=a1d3f3b7218b9385ca68ce1fbf972d7b" target="_blank">Vec::get() method playground</a></p>
+<h5 id="vector-used-a-stack">vector used a stack</h5>
+<p>You can use <code>Vec&lt;T&gt;</code> as an efficient stack as well by using the <code>push()</code> and <code>pop()</code> methods.</p>
+<p>Remember that a stack structure is much like a stack of plates when washing dishes. Each plate that you stack on top is <code>pushed</code> onto the stack and you don&apos;t remove plates from the bottom of the stack instead you <code>pop</code> a plate from the top. </p>
+<p>Likewise the <code>push</code> method pushes items to the end of the stack while the <code>pop</code> method removes elements from the top of the stack.</p>
+<h6 id="vecpush-method"><code>Vec::push</code> method</h6>
+<p><a href="https://doc.rust-lang.org/1.30.0/std/vec/struct.Vec.html#method.push" target="_blank">Vec::push</a></p>
+<pre><code class="lang-rust"><span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> primes = <span class="hljs-built_in">Vec</span>::new();
+
+primes.push(<span class="hljs-number">2</span>);
+primes.push(<span class="hljs-number">3</span>);
+primes.push(<span class="hljs-number">5</span>);
+
+<span class="hljs-keyword">let</span> five: <span class="hljs-keyword">usize</span> = <span class="hljs-number">5</span>;
+
+<span class="hljs-built_in">assert_eq!</span>(primes[primes.len() - <span class="hljs-number">1</span>], five);
+</code></pre>
+<p>Notice here that we pushed =&gt; <code>2, 3, 5</code> onto the vector variable <code>primes</code> and that just like a stack the top of the item is the last item pushed which in this case is the <code>5</code> item.</p>
+<p>Notice that we also used the </p>
+<h6 id="vecpop-method"><code>Vec::pop</code> method</h6>
+<p><a href="https://doc.rust-lang.org/1.30.0/std/vec/struct.Vec.html#method.pop" target="_blank">Vec::pop</a></p>
+<pre><code class="lang-rust1">.................................
+primes.push(7);
+assert_eq!(primes.pop(), Some(7));
+</code></pre>
+<p>Notice here that pushed <code>7</code> onto the stack and then when we called the <code>pop</code> method it gave us the item on the top of the stack which is <code>7</code>. </p>
+<p>Also note that the <code>pop</code> method returns <code>Option&lt;T&gt;</code> type because it is possible that vector is empty in which case the <code>None</code> enum value is returned which represents no value.</p>
+<p><em>This is why we asserted <code>Some(7)</code> instead of just <code>7</code>.</em></p>
+<h6 id="iterating-through-vectors">Iterating through vectors</h6>
+<p>Remember that <code>iterators</code> are used to traverse data structures like stacks.</p>
+<p><code>Iterators</code> will traditionally have <code>next()</code> method and you can read more about this pattern in the <a href="https://en.wikipedia.org/wiki/Iterator_pattern" target="_blank">Iterator_Pattern</a> wikipedia link.</p>
+<p>We can iterate through the primes vector variable like this:</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> primes = <span class="hljs-built_in">Vec</span>::new();
+
+primes.push(<span class="hljs-number">2</span>);
+primes.push(<span class="hljs-number">3</span>);
+primes.push(<span class="hljs-number">5</span>);
+primes.push(<span class="hljs-number">7</span>);
+primes.push(<span class="hljs-number">11</span>);
+
+
+<span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> iterator = primes.iter();
+<span class="hljs-built_in">assert_eq!</span>(iterator.next(), <span class="hljs-literal">Some</span>(&amp;<span class="hljs-number">2</span>));
+<span class="hljs-built_in">assert_eq!</span>(iterator.next(), <span class="hljs-literal">Some</span>(&amp;<span class="hljs-number">3</span>));
+<span class="hljs-built_in">assert_eq!</span>(iterator.next(), <span class="hljs-literal">Some</span>(&amp;<span class="hljs-number">5</span>));
+<span class="hljs-built_in">assert_eq!</span>(iterator.next(), <span class="hljs-literal">Some</span>(&amp;<span class="hljs-number">7</span>));
+<span class="hljs-built_in">assert_eq!</span>(iterator.next(), <span class="hljs-literal">Some</span>(&amp;<span class="hljs-number">11</span>));
+</code></pre>
+<p>Notice here that we called the <code>next</code> method. The <code>next</code> method is a deref method and in rust it uses the <code>Deref</code> trait and traits will be introduced later in the workshop but know that this emulates inheritance in rust.</p>
+<p>With that being said it is a method we can use with the vector.</p>
+<p>We can also use call the enumerate method and get an index value and use a <code>for</code> loop with rust like this:</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">let</span> primes2 = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>];
+
+<span class="hljs-keyword">for</span> (index, prime) <span class="hljs-keyword">in</span> primes2.iter().enumerate() {
+    <span class="hljs-built_in">assert_eq!</span>(&amp;primes[index], prime);
+}
+</code></pre>
+<h6 id="pushpopnextiterenumerate-playground">push|pop|next|iter|enumerate playground</h6>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=45b2057fe2b31242b594bdfe0b2d9737" target="_blank">push|pop|next|iter|enumerate playground</a></p>
+<h6 id="itermut-method"><code>iter_mut</code> method</h6>
+<p>We can also use the <code>iter_mut</code> method to return an iterator that allows us to modify each value in the <code>Vec&lt;T&gt;</code> variable</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> numbers = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+
+<span class="hljs-keyword">for</span> number <span class="hljs-keyword">in</span> numbers.iter_mut() {
+    *number *= <span class="hljs-number">2</span>;
+}
+
+<span class="hljs-keyword">let</span> factor_of_two = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">10</span>];
+
+<span class="hljs-keyword">for</span> (index, number) <span class="hljs-keyword">in</span> numbers.iter().enumerate() {
+    <span class="hljs-built_in">assert_eq!</span>(number, &amp;factor_of_two[index]);
+}
+</code></pre>
+<h4 id="hash-maps">Hash Maps</h4>
+<p>The <code>HashMap</code> module will not be used as often as the <code>Vec</code> Module but it is another important module to be aware of rust.</p>
+<p>You will typically use the <code>HashMap</code> module when you are in need of Map data structure.</p>
+<p>The <code>HashMap</code> module is the equivalent of what is known as associative arrays, maps, symbol table, or dictionary in other programming languages.</p>
+<p>A <code>HashMap</code> like a <code>Vector</code> is an <a href="https://en.wikipedia.org/wiki/Abstract_data_type" target="_blank">abstract data type</a> or in other words a data type that has a defined behavior which is implemented through methods.</p>
+<p>This abstract data type (ADT) usually has the following methods in its API:</p>
+<ul>
+<li>addition of a pair to its collection<ul>
+<li><code>put|insert|set</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>removal of a pair to its collection<ul>
+<li><code>delete|remove</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>modification of an existing pair</p>
+<ul>
+<li><code>insert</code></li>
+</ul>
+</li>
+<li><p>lookup of value that is associated with a particular key</p>
+<ul>
+<li><code>get</code></li>
+</ul>
+</li>
+<li><p>check if it is empty</p>
+<ul>
+<li><code>is_empty|isEmpty</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>the number of entries aka <code>size</code><ul>
+<li><code>size|len</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>a list of keys in the <code>symbol table|map|dictionary</code><ul>
+<li><code>keys</code></li>
+</ul>
+</li>
+</ul>
+<p>The Rust API for <code>HashMap</code> has these methods and more already defined for us:</p>
+<h6 id="insert-method"><code>insert</code> method</h6>
+<p>The <a href="https://doc.rust-lang.org/1.30.0/std/collections/struct.HashMap.html#method.insert" target="_blank">insert</a> method inserts a key:value pair into the map.</p>
+<p>The insert method returns an <code>Option&lt;T&gt;</code> type and so will return <code>None</code> if no key is present and will will return a <code>Some</code> Type and modify current value if it exists.</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">use</span> std::collections::HashMap;
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> soldiers = HashMap::new();
+
+    <span class="hljs-meta">#[derive(Debug, Clone)]</span>
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Soldier</span></span> {
+        name: <span class="hljs-built_in">String</span>,
+        age: <span class="hljs-keyword">u32</span>,
+        rank: <span class="hljs-built_in">String</span>,
+        years_of_service: <span class="hljs-keyword">u32</span>,
+    }
+    <span class="hljs-keyword">let</span> rambo = Soldier {
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;John Rambo&quot;</span>),
+        age: <span class="hljs-number">32</span>,
+        rank: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;SFC&quot;</span>),
+        years_of_service: <span class="hljs-number">12</span>,
+    };
+    soldiers.insert(<span class="hljs-string">&quot;rambo&quot;</span>, &amp;rambo);
+
+    <span class="hljs-keyword">let</span> chuck = Soldier {
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Chuck Norris&quot;</span>),
+        age: <span class="hljs-number">34</span>,
+        rank: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;MSGT&quot;</span>),
+        years_of_service: <span class="hljs-number">13</span>,
+    };
+    soldiers.insert(<span class="hljs-string">&quot;chuck&quot;</span>, &amp;chuck);
+
+    <span class="hljs-built_in">assert_eq!</span>(soldiers.get(<span class="hljs-string">&quot;rambo&quot;</span>).unwrap().name, rambo.name);
+    <span class="hljs-built_in">assert_eq!</span>(soldiers.get(<span class="hljs-string">&quot;chuck&quot;</span>).unwrap().name, chuck.name);
+
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> junior = rambo.clone();
+    junior.name = <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Son Of Rambo&quot;</span>);
+
+    soldiers.insert(<span class="hljs-string">&quot;rambo&quot;</span>, &amp;junior);
+    <span class="hljs-built_in">assert_eq!</span>(soldiers.get(<span class="hljs-string">&quot;rambo&quot;</span>).unwrap().name, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Son Of Rambo&quot;</span>));
+    <span class="hljs-built_in">assert_eq!</span>(soldiers.get(<span class="hljs-string">&quot;rambo&quot;</span>).unwrap().age, <span class="hljs-number">32</span>);
+}
+</code></pre>
+<p>Here we inserted 2 entries into the soldiers <code>HashMap</code> and then used <code>get</code> to retrieve our key/value pair.</p>
+<p>Notice that we had to call <code>unwrap</code> as the call to <code>get</code> returns an <code>Option&lt;&amp;V&gt;</code> value</p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=1b8d08cb20822a68e58fa6cebee66d1a" target="_blank"><code>HashMap</code> insert playground</a></p>
+<p>Notice that in the 2nd call to insert we set a name value and insert over</p>
+<h6 id="remove-method"><code>remove</code> method</h6>
+<p>The <code>remove</code> method will remove the key and will return the old value that was set for the key. </p>
+<p>On any subsequent calls to remove, the <code>None</code> enum type will be returned.</p>
+<pre><code class="lang-rust">...............................................................
+<span class="hljs-built_in">assert_eq!</span>(soldiers.remove(<span class="hljs-string">&quot;rambo&quot;</span>).unwrap().name, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Son Of Rambo&quot;</span>));
+<span class="hljs-built_in">assert_eq!</span>(soldiers.remove(<span class="hljs-string">&quot;rambo&quot;</span>), <span class="hljs-literal">None</span>);
+</code></pre>
+<p>Notice that when we tried to call <code>remove</code> again we got the <code>None</code> type returned</p>
+<h6 id="isempty-method"><code>is_empty</code> method</h6>
+<p>The <a href="https://doc.rust-lang.org/1.30.0/std/collections/struct.HashMap.html#method.is_empty" target="_blank">is_empty</a> method returns a boolean value</p>
+<pre><code class="lang-rust">...................................
+<span class="hljs-built_in">assert_eq!</span>(soldiers.is_empty(), <span class="hljs-literal">false</span>);
+</code></pre>
+<h6 id="keys-method"><code>keys</code> method</h6>
+<p>The <a href="https://doc.rust-lang.org/1.30.0/std/collections/struct.HashMap.html#method.keys" target="_blank">keys</a> returns a list of keys in an arbitrary order.</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> soldiers.keys() {
+    <span class="hljs-built_in">assert_eq!</span>(*key, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;chuck&quot;</span>));
+}
+</code></pre>
+<h6 id="hashmap-playground-example">HashMap playground example</h6>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=8c807b7a11cd1a58cf3244495fabbc52" target="_blank">HashMap Playground</a></p>
+<h2 id="strings">Strings</h2>
+<p>In Rust there is 2 types of strings:</p>
+<ol>
+<li><p><code>String</code></p>
+<ol>
+<li>A String is stored as a vector of bytes (<code>Vec&lt;u8&gt;</code>), but guaranteed to always be a valid utf-8 sequence. </li>
+<li>String is heap allocated, growable and not null terminated.</li>
+</ol>
+</li>
+<li><p><code>&amp;str</code></p>
+<ol>
+<li><code>&amp;str</code> is a slice (<code>&amp;[u8]</code>) that points to a valid utf-8 sequence.</li>
+<li>The utf-8 sequence can be used to see the String.</li>
+</ol>
+</li>
+</ol>
+<p>We have already used both of these types of strings in the workshop but haven&apos;t formally talked about them in detail.</p>
+<h4 id="stdstr-module"><code>std::str</code> module</h4>
+<p>The <a href="https://doc.rust-lang.org/std/str/" target="_blank">std::str</a> module explains in detail Structs and function you can use.</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">let</span> message = <span class="hljs-string">&quot;I am a message!&quot;</span>;
+</code></pre>
+<p>This is known as a String Literal or String Slice. </p>
+<p>String Literals have a static lifetime which means that the variable <code>message</code> has a value for as long as the duration of the running program.</p>
+<h4 id="stdstringstring-module"><code>std::string::String</code> module</h4>
+<p>We have been using the <code>String</code> module methods all throughout the workshop</p>
+<p>We have been using the <code>String::from</code> method for the most part like this:</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">let</span> message = <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;I am a message!&quot;</span>);
+</code></pre>
+<p>There are other ways to create a <code>String</code> type like this:</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">let</span> message = <span class="hljs-string">&quot;I am a message!&quot;</span>.to_string();
+<span class="hljs-keyword">let</span> message: <span class="hljs-built_in">String</span> = <span class="hljs-string">&quot;message here&quot;</span>.into();
+</code></pre>
+<h6 id="string-concatenation">String concatenation</h6>
+<p>We can concatenate strings using the <code>+</code> but we must understand the borrowing rules at times.</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">let</span> word = <span class="hljs-string">&quot;word&quot;</span>.to_string();
+<span class="hljs-keyword">let</span> up = word + <span class="hljs-string">&quot; up&quot;</span>;
+<span class="hljs-built_in">assert_eq!</span>(up, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;word up&quot;</span>));
+</code></pre>
+<h6 id="stdstr-primitive-type-methods-with-string"><code>std::str</code> primitive type methods with string</h6>
+<p>There is methods available in the primitive type <code>str</code> that we can use </p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> pangram: &amp;<span class="hljs-symbol">&apos;static</span> <span class="hljs-keyword">str</span> = <span class="hljs-string">&quot;the quick brown fox jumps over the lazy dog&quot;</span>;
+    <span class="hljs-built_in">assert_eq!</span>(pangram.len(), <span class="hljs-number">43</span>);
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> pangram_reversed_list = <span class="hljs-string">&quot;dog lazy the over jumps fox brown quick the&quot;</span>.split_whitespace();
+    <span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> pangram.split_whitespace().rev() {
+        <span class="hljs-built_in">assert_eq!</span>(word, pangram_reversed_list.next().unwrap());
+    }
+}
+</code></pre>
+<p>Notice here that we used the <a href="https://doc.rust-lang.org/std/primitive.str.html#method.len" target="_blank">len</a> method to compute the length and the <a href="https://doc.rust-lang.org/std/primitive.str.html#method.split_whitespace" target="_blank">split_whitespace</a> primitive methods for the string slice.</p>
+<h5 id="string-module-methods">String module methods</h5>
+<p>There are several methods in the <code>String</code> module that you can use one of which is the </p>
+<p><code>String::new</code> method.</p>
+<p>We have already looked at the <code>String::from</code> method throughout the workshop.</p>
+<h6 id="final-strings-example">Final Strings example</h6>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> pangram: &amp;<span class="hljs-symbol">&apos;static</span> <span class="hljs-keyword">str</span> = <span class="hljs-string">&quot;the quick brown fox jumps over the lazy dog&quot;</span>;
+    <span class="hljs-built_in">assert_eq!</span>(pangram.len(), <span class="hljs-number">43</span>);
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> pangram_reversed_list = <span class="hljs-string">&quot;dog lazy the over jumps fox brown quick the&quot;</span>.split_whitespace();
+    <span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> pangram.split_whitespace().rev() {
+        <span class="hljs-built_in">assert_eq!</span>(word, pangram_reversed_list.next().unwrap());
+    }
+    <span class="hljs-keyword">let</span> alphabet = <span class="hljs-string">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span>;
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> builder = <span class="hljs-built_in">String</span>::new();
+    <span class="hljs-keyword">for</span> ch <span class="hljs-keyword">in</span> alphabet.split(<span class="hljs-string">&quot;&quot;</span>) {
+        builder.push_str(&amp;(ch.to_owned() + <span class="hljs-string">&quot;|&quot;</span>));
+    }
+    <span class="hljs-built_in">assert_eq!</span>(builder, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;|a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z||&quot;</span>));
+}
+</code></pre>
+<h6 id="string-playground">String playground</h6>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=040a615a785b4928a3c408cf1b3ff962" target="_blank">String playground</a></p>
+<h2 id="bread-crumb-navigation">Bread Crumb Navigation</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Previous</th>
+<th style="text-align:right">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x2190; <a href="modules.html">Modules</a></td>
+<td style="text-align:right"><a href="error_handling.html">Error Handling</a> &#x2192;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="modules.html" class="navigation navigation-prev " aria-label="Previous page: Modules">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="error_handling.html" class="navigation navigation-next " aria-label="Next page: Error Handling">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Standard Library","level":"1.18","depth":1,"next":{"title":"Error Handling","level":"1.19","depth":1,"path":"docs/error_handling.md","ref":"docs/error_handling.md","articles":[]},"previous":{"title":"Modules","level":"1.17","depth":1,"path":"docs/modules.md","ref":"docs/modules.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","advanced-emoji","highlight","copy-code-button"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/standard_library.md","mtime":"2020-01-06T23:11:12.929Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T14:18:23.704Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

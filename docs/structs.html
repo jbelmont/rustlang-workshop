@@ -1,0 +1,651 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Structs · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="methods.html" />
+    
+    
+    <link rel="prev" href="slices.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="hello_world.html">
+            
+                <a href="hello_world.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="stdin-stdout-stderr.html">
+            
+                <a href="stdin-stdout-stderr.html">
+            
+                    
+                    Data Streams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ownership.html">
+            
+                <a href="ownership.html">
+            
+                    
+                    Ownership
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="borrowing.html">
+            
+                <a href="borrowing.html">
+            
+                    
+                    Borrowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="slices.html">
+            
+                <a href="slices.html">
+            
+                    
+                    Slices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="structs.html">
+            
+                <a href="structs.html">
+            
+                    
+                    Structs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="patterns.html">
+            
+                <a href="patterns.html">
+            
+                    
+                    Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="standard_library.html">
+            
+                <a href="standard_library.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="error_handling.html">
+            
+                <a href="error_handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="lifetimes.html">
+            
+                <a href="lifetimes.html">
+            
+                    
+                    Lifetimes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Structs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rust-workshop---structs">Rust Workshop - Structs</h1>
+<h2 id="sections">Sections:</h2>
+<ul>
+<li><a href="#struct-definition">Struct Definition</a></li>
+<li><a href="#struct-example">Basic Struct Example</a></li>
+<li><a href="#tuple-struct">Tuple Struct</a></li>
+<li><a href="#unit-struct">Unit Struct</a></li>
+<li><a href="#struct-update-syntax">Struct Update Syntax</a></li>
+<li><a href="#struct-field-init-shorthand">Struct Field init shorthand</a></li>
+<li><a href="#struct-playground">Struct Playground</a></li>
+<li><a href="#practice-exercise-%5C--%3Estructs">Practice Exercise -&gt; Structs</a></li>
+<li><a href="#bread-crumb-navigation">Bread Crumb Navigation</a></li>
+</ul>
+<h2 id="struct-definition">Struct Definition</h2>
+<p><a href="https://doc.rust-lang.org/reference/types/struct.html" target="_blank">Struct Type</a></p>
+<blockquote>
+<p>A struct type is a heterogeneous product of other types, called the fields of the type.</p>
+<p>New instances of a struct can be constructed with a struct expression.</p>
+<p>The memory layout of a struct is undefined by default to allow for compiler optimizations like field reordering, but it can be fixed with the repr attribute. In either case, fields may be given in any order in a corresponding struct expression; the resulting struct value will always have the same memory layout.</p>
+</blockquote>
+<h2 id="basic-struct-example">Basic Struct Example</h2>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-meta">#[derive(Debug)]</span>
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Person</span></span> {
+        name: <span class="hljs-built_in">String</span>,
+        age: <span class="hljs-keyword">u32</span>,
+        gender: <span class="hljs-built_in">String</span>,
+    }
+
+    <span class="hljs-keyword">let</span> sandy = Person {
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Sandy Belmont&quot;</span>),
+        age: <span class="hljs-number">71</span>,
+        gender: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Female&quot;</span>),
+    };
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{:?}&quot;</span>, sandy);
+}
+</code></pre>
+<h2 id="tuple-struct">Tuple Struct</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/struct-expr.html#tuple-struct-expression" target="_blank">Tuple Struct specification</a></p>
+<pre><code class="lang-rust"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">CartesianCoordinates</span></span>(<span class="hljs-keyword">i32</span>, <span class="hljs-keyword">i32</span>);
+
+<span class="hljs-keyword">let</span> point = CartesianCoordinates(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>);
+</code></pre>
+<p>Notice that here we defined a struct that is enclosed in parenthesis making this a tuple struct.</p>
+<h2 id="unit-struct">Unit Struct</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/struct-expr.html#unit-struct-expression" target="_blank">Unit Struct specification</a></p>
+<blockquote>
+<p>A unit struct expression is just the path to a unit struct item. This refers to the unit struct&apos;s implicit constant of its value. The unit struct value can also be constructed with a fieldless struct expression. For example:</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Dude</span></span>;
+
+<span class="hljs-keyword">let</span> d = Dude;
+</code></pre>
+<h2 id="struct-update-syntax">Struct Update Syntax</h2>
+<p>Rust has a nice mechanism for you to create instances of another struct and reuse values.</p>
+<p>It is using the <code>..</code> feature</p>
+<p>Let us say that you had a struct named <code>Soldier</code> like this:</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-meta">#[derive(Clone)]</span>
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Soldier</span></span> {
+        name: <span class="hljs-built_in">String</span>,
+        age: <span class="hljs-keyword">u32</span>,
+        rank: <span class="hljs-built_in">String</span>,
+        years_of_service: <span class="hljs-keyword">u32</span>,
+    }
+
+    <span class="hljs-keyword">let</span> soldier1 = Soldier {
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;John Rambo&quot;</span>),
+        age: <span class="hljs-number">32</span>,
+        rank: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;SFC&quot;</span>),
+        years_of_service: <span class="hljs-number">12</span>,
+    };
+
+    <span class="hljs-keyword">let</span> soldier2 = Soldier {
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Chuck Norris&quot;</span>),
+        ..soldier1.clone()
+    };
+
+    <span class="hljs-built_in">assert_eq!</span>(soldier1.name, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;John Rambo&quot;</span>));
+    <span class="hljs-built_in">assert_eq!</span>(soldier2.name, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Chuck Norris&quot;</span>));
+    <span class="hljs-built_in">assert_eq!</span>(soldier1.rank, soldier2.rank);
+    <span class="hljs-built_in">assert_eq!</span>(soldier1.years_of_service, soldier2.years_of_service);
+    <span class="hljs-built_in">assert_eq!</span>(soldier1.age, soldier2.age);
+}
+</code></pre>
+<p>Notice that we needed to clone soldier1 as its value will be moved and no longer valid for us to use.</p>
+<p>We added a new attribute called Clone for the struct value</p>
+<h2 id="struct-field-init-shorthand">Struct Field init shorthand</h2>
+<p><a href="https://doc.rust-lang.org/reference/expressions/struct-expr.html#struct-field-init-shorthand" target="_blank">Struct field init shorthand specification</a></p>
+<blockquote>
+<p>When initializing a data structure (struct, enum, union) with named (but not numbered) fields, it is allowed to write fieldname as a shorthand for fieldname: fieldname. This allows a compact syntax with less duplication.</p>
+</blockquote>
+<pre><code class="lang-rust"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Soldier</span></span> {
+    name: <span class="hljs-built_in">String</span>,
+    age: <span class="hljs-keyword">u32</span>,
+    rank: <span class="hljs-built_in">String</span>,
+    years_of_service: <span class="hljs-keyword">u32</span>,
+}
+
+<span class="hljs-keyword">let</span> name = <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;John Rambo&quot;</span>);
+<span class="hljs-keyword">let</span> age = <span class="hljs-number">32</span>;
+<span class="hljs-keyword">let</span> rank = <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;SFC&quot;</span>);
+<span class="hljs-keyword">let</span> years_of_service = <span class="hljs-number">12</span>;
+
+<span class="hljs-keyword">let</span> rambo = Soldier {
+    name: name,
+    age: age,
+    rank: rank,
+    years_of_service: years_of_service,
+};
+
+<span class="hljs-keyword">let</span> rambo2 = Soldier {
+    name,
+    age,
+    rank,
+    years_of_service,
+};
+</code></pre>
+<p>Notice that didn&apos;t add the value in rambo2 as it is the same name as the key.</p>
+<h2 id="struct-playground">Struct Playground</h2>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=ac48d773d3fe9bdd4e22f348b4beb581" target="_blank">Playground 1</a></p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=38662be012b9ebf26959c168f3e016cf" target="_blank">Playground 2</a></p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=4bfa5a6c3e1c920452a13e9d2425c58b" target="_blank">Playground 3</a></p>
+<h2 id="practice-exercise---structs">Practice Exercise -&gt; Structs</h2>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=e0ea71a30b60f13b170b216102a73fa8" target="_blank">Practice Exercise -&gt; Structs</a></p>
+<h2 id="bread-crumb-navigation">Bread Crumb Navigation</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Previous</th>
+<th style="text-align:right">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x2190; <a href="slices.html">Slices</a></td>
+<td style="text-align:right"><a href="methods.html">Methods</a> &#x2192;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="slices.html" class="navigation navigation-prev " aria-label="Previous page: Slices">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="methods.html" class="navigation navigation-next " aria-label="Next page: Methods">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Structs","level":"1.13","depth":1,"next":{"title":"Methods","level":"1.14","depth":1,"path":"docs/methods.md","ref":"docs/methods.md","articles":[]},"previous":{"title":"Slices","level":"1.12","depth":1,"path":"docs/slices.md","ref":"docs/slices.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","advanced-emoji","highlight","copy-code-button"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/structs.md","mtime":"2020-01-25T14:12:39.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T14:18:23.704Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,801 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Generics · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lifetimes.html" />
+    
+    
+    <link rel="prev" href="error_handling.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="hello_world.html">
+            
+                <a href="hello_world.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="stdin-stdout-stderr.html">
+            
+                <a href="stdin-stdout-stderr.html">
+            
+                    
+                    Data Streams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="control_flow.html">
+            
+                <a href="control_flow.html">
+            
+                    
+                    Control Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ownership.html">
+            
+                <a href="ownership.html">
+            
+                    
+                    Ownership
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="borrowing.html">
+            
+                <a href="borrowing.html">
+            
+                    
+                    Borrowing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="slices.html">
+            
+                <a href="slices.html">
+            
+                    
+                    Slices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="structs.html">
+            
+                <a href="structs.html">
+            
+                    
+                    Structs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="methods.html">
+            
+                <a href="methods.html">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="patterns.html">
+            
+                <a href="patterns.html">
+            
+                    
+                    Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="standard_library.html">
+            
+                <a href="standard_library.html">
+            
+                    
+                    Standard Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="error_handling.html">
+            
+                <a href="error_handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.20" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="lifetimes.html">
+            
+                <a href="lifetimes.html">
+            
+                    
+                    Lifetimes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Generics</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rust-workshop---generics">Rust Workshop - Generics</h1>
+<h2 id="sections">Sections:</h2>
+<ul>
+<li><a href="#concept-of-generics">Concept of Generics</a></li>
+<li><a href="#generic-function">Generic Function</a></li>
+<li><a href="#implementations">Implementations</a></li>
+<li><a href="#traits">Traits</a></li>
+<li><a href="#bounds">Bounds</a></li>
+<li><a href="#where-clauses">Where Clauses</a></li>
+<li><a href="#associated-items">Associated Items</a></li>
+<li><a href="#phantom-types">Phantom Types</a></li>
+<li><a href="#bread-crumb-navigation">Bread Crumb Navigation</a></li>
+</ul>
+<h2 id="concept-of-generics">Concept of Generics</h2>
+<p>Much like when you want to make a general analogy about a concept you can utilize Generics in Rust to generalize your Rust Programs.</p>
+<p>We could specify a function and have functions that behave in the same exact way but that would be unnecessary if we can utilize generics.</p>
+<p>You will typically see generics denoted by angle brackets and one letter Capitalized alphabet such as:</p>
+<pre><code class="lang-rust">&lt;T&gt; =&gt; List of &lt;T&gt;
+&lt;E&gt; =&gt; List of &lt;E&gt;
+</code></pre>
+<h2 id="generic-function">Generic Function</h2>
+<p>A function can be considered generic if it is preceded by a <code>&lt;T&gt;</code> before its parameters specified in <code>(...)</code> and its name:</p>
+<pre><code class="lang-rust"><span class="hljs-comment">// generic soldier</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Soldier</span></span>&lt;T&gt;(T);
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">i_am_generic</span></span>&lt;T&gt;(s: Soldier&lt;T&gt;) {}
+</code></pre>
+<p>Here we have a struct named <code>Soldier</code> that takes a generic of T and our function named <code>i_am_generic</code> takes a generic argument of T and specifies an argument of <code>Soldier&lt;T&gt;</code></p>
+<h2 id="implementations">Implementations</h2>
+<p>In order for implementation to be generic the <code>&lt;T&gt;</code> must precede the type like this:</p>
+<pre><code class="lang-rust"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Student</span></span>&lt;<span class="hljs-symbol">&apos;a</span>, T, U&gt; {
+    scores: &amp;<span class="hljs-symbol">&apos;a</span> [T],
+    name: U,
+}
+
+<span class="hljs-keyword">impl</span>&lt;T, U&gt; Student&lt;<span class="hljs-symbol">&apos;_</span>, T, U&gt; {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">get_scores</span></span>(&amp;<span class="hljs-keyword">self</span>) -&gt; &amp;[T] {
+        <span class="hljs-keyword">self</span>.scores
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> student = Student {
+        scores: &amp;<span class="hljs-built_in">vec!</span>[<span class="hljs-number">98</span>, <span class="hljs-number">99</span>, <span class="hljs-number">88</span>, <span class="hljs-number">85</span>, <span class="hljs-number">100</span>],
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Jean-Claude Van Damme&quot;</span>),
+    };
+
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> summation = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> score <span class="hljs-keyword">in</span> student.get_scores().iter() {
+        summation += score;
+    }
+    <span class="hljs-built_in">assert_eq!</span>(summation / student.get_scores().len(), <span class="hljs-number">94</span>);
+    <span class="hljs-built_in">assert_eq!</span>(student.name, <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Jean-Claude Van Damme&quot;</span>));
+}
+</code></pre>
+<p>Notice that here we have <code>impl&lt;T, U&gt;</code> defined before the type declaration for the <code>Student</code> struct type.</p>
+<h2 id="bounds">Bounds</h2>
+<blockquote>
+<p>Trait and lifetime bounds provide a way for generic items to restrict which types and lifetimes are used as their parameters. Bounds can be provided on any type in a where clause. There are also shorter forms for certain common cases:</p>
+</blockquote>
+<p><a href="https://doc.rust-lang.org/reference/trait-bounds.html" target="_blank">Trait Bounds specification</a></p>
+<h4 id="traits-recap">Traits Recap</h4>
+<p><em>We previously mentioned Traits earlier in the workshop on the <a href="data_types.html#trait-types">Data Types -&gt; Trait Types Section</a> so please check it out if you skipped to this section and do not know what a Trait is..</em></p>
+<pre><code class="lang-rust"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Number</span></span> {
+    num1: <span class="hljs-keyword">i32</span>,
+    num2: <span class="hljs-keyword">i32</span>,
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Calculator</span></span> {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">adder</span></span>(&amp;<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-keyword">i32</span>;
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">subtracter</span></span>(&amp;<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-keyword">i32</span>;
+}
+
+<span class="hljs-keyword">impl</span> Calculator <span class="hljs-keyword">for</span> Number {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">adder</span></span>(&amp;<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-keyword">i32</span> {
+        <span class="hljs-keyword">self</span>.num1 + <span class="hljs-keyword">self</span>.num2
+    }
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">subtracter</span></span>(&amp;<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-keyword">i32</span> {
+        <span class="hljs-keyword">self</span>.num1 - <span class="hljs-keyword">self</span>.num2
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> number = Number {
+        num1: <span class="hljs-number">5</span>,
+        num2: <span class="hljs-number">4</span>,
+    };
+    <span class="hljs-built_in">assert_eq!</span>(number.adder(), <span class="hljs-number">9</span>);
+    <span class="hljs-built_in">assert_eq!</span>(number.subtracter(), <span class="hljs-number">1</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=e7fb35403f6f14529eb62303ec81c8e9" target="_blank">traits example recap playground</a></p>
+<h4 id="bounds-example">Bounds example</h4>
+<pre><code class="lang-rust"><span class="hljs-meta">#[derive(Debug,PartialEq)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Army</span></span>;
+
+<span class="hljs-meta">#[allow(dead_code)]</span>
+<span class="hljs-meta">#[derive(Debug,PartialEq)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Navy</span></span>;
+
+<span class="hljs-meta">#[allow(dead_code)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">AirForce</span></span>;
+
+<span class="hljs-meta">#[allow(dead_code)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Marines</span></span>;
+
+<span class="hljs-meta">#[allow(dead_code)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">CoastGuard</span></span>;
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Service</span></span> {}
+
+<span class="hljs-keyword">impl</span> Service <span class="hljs-keyword">for</span> Army {}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">army</span></span>&lt;T: Service&gt;(a: &amp;T) -&gt; &amp;T {
+    a
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> soldier = Army;
+    <span class="hljs-comment">// army is bound to Army and won&apos;t work with other services</span>
+    <span class="hljs-built_in">assert_eq!</span>(&amp;Army, army(&amp;soldier));
+}
+</code></pre>
+<p>Notice that Service is bound to Army here and not to other services.</p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=2b53fa275bb1483428a64e8acc1e782f" target="_blank">Bounds example</a></p>
+<h2 id="where-clauses">Where Clauses</h2>
+<p>A <code>Trait</code> bound can be expressed using a <code>where</code> clause rather than at the Type Level <code>&lt;T&gt;</code>.</p>
+<p>A <code>where</code> clause can apply Trait bounds to arbitrary types and not just type parameters.</p>
+<h4 id="here-is-how-the-where-clause-looks-like-in-function">Here is how the <code>where</code> clause looks like in function:</h4>
+<pre><code class="lang-rust"><span class="hljs-comment">// Example of where clause with function</span>
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">func_thing</span></span>&lt;T, U&gt;(t: T, u: U) -&gt; <span class="hljs-keyword">f32</span> 
+    <span class="hljs-keyword">where</span> T: Display + <span class="hljs-built_in">Clone</span>, U: <span class="hljs-built_in">Clone</span> + Debug {
+
+    }
+</code></pre>
+<h4 id="here-is-how-the-where-clause-looks-like-in-implementation">Here is how the <code>where</code> clause looks like in implementation:</h4>
+<pre><code class="lang-rust"><span class="hljs-keyword">use</span> std::fmt::Debug;
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Dude</span></span> {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">he_who_abides</span></span>(<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-built_in">String</span>;
+}
+
+<span class="hljs-keyword">impl</span>&lt;T: std::fmt::Display&gt; Dude <span class="hljs-keyword">for</span> T <span class="hljs-keyword">where</span> <span class="hljs-built_in">Option</span>&lt;T&gt;: Debug {
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">he_who_abides</span></span>(<span class="hljs-keyword">self</span>) -&gt; <span class="hljs-built_in">String</span> {
+        <span class="hljs-built_in">format!</span>(<span class="hljs-string">&quot;{}&quot;</span>, <span class="hljs-keyword">self</span>)
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> sentence = <span class="hljs-string">&quot;The rug really tied the room together&quot;</span>;
+    <span class="hljs-keyword">let</span> big_lebowski_phrase = <span class="hljs-built_in">String</span>::from(sentence);
+    <span class="hljs-built_in">assert_eq!</span>(
+        big_lebowski_phrase.he_who_abides(),
+        sentence,
+    );
+}
+</code></pre>
+<h2 id="associated-items">Associated Items</h2>
+<p><a href="https://doc.rust-lang.org/reference/items/associated-items.html#associated-types" target="_blank">Associated Types specification</a></p>
+<blockquote>
+<p>Associated types are type aliases associated with another type. Associated types cannot be defined in inherent implementations nor can they be given a default implementation in traits.</p>
+<p>An associated type definition defines a type alias on another type. It is written as type, then an identifier, then an =, and finally a type.</p>
+</blockquote>
+<h4 id="associated-item-example">Associated Item example:</h4>
+<pre><code class="lang-rust"><span class="hljs-meta">#[allow(dead_code)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">ServiceMember</span></span> {
+    branch: <span class="hljs-built_in">String</span>,
+    name: <span class="hljs-built_in">String</span>,
+    age: <span class="hljs-keyword">u32</span>,
+    rank: <span class="hljs-built_in">String</span>,
+    years_of_experience: <span class="hljs-keyword">u32</span>,
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">MilitaryBranch</span></span> {
+    <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Branch</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">member_of_branch</span></span>(
+        &amp;<span class="hljs-keyword">self</span>,
+        _: &amp;Self::Branch,
+    ) -&gt; <span class="hljs-built_in">String</span>;
+}
+
+<span class="hljs-keyword">impl</span> MilitaryBranch <span class="hljs-keyword">for</span> ServiceMember {
+    <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Branch</span></span> = <span class="hljs-built_in">String</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">member_of_branch</span></span>(
+        &amp;<span class="hljs-keyword">self</span>,
+        branch: &amp;<span class="hljs-built_in">String</span>,
+
+    ) -&gt; <span class="hljs-built_in">String</span> {
+        <span class="hljs-keyword">match</span> &amp;<span class="hljs-keyword">self</span>.branch {
+            s <span class="hljs-keyword">if</span> &amp;<span class="hljs-keyword">self</span>.branch == branch =&gt; <span class="hljs-built_in">format!</span>(<span class="hljs-string">&quot;{} is in {}&quot;</span>, &amp;<span class="hljs-keyword">self</span>.name, s),
+            _ =&gt; <span class="hljs-built_in">format!</span>(<span class="hljs-string">&quot;{}&quot;</span>, <span class="hljs-string">&quot;Branch not known&quot;</span>),
+        }
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> army_soldier = ServiceMember {
+        branch: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Army&quot;</span>),
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;John Rambo&quot;</span>),
+        age: <span class="hljs-number">32</span>,
+        rank: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;SFC&quot;</span>),
+        years_of_experience: <span class="hljs-number">12</span>,
+    };
+    <span class="hljs-keyword">let</span> navy_soldier = ServiceMember {
+        branch: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Navy&quot;</span>),
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Fried Squid&quot;</span>),
+        age: <span class="hljs-number">21</span>,
+        rank: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Ensign&quot;</span>),
+        years_of_experience: <span class="hljs-number">1</span>,
+    };
+    <span class="hljs-keyword">let</span> air_force_soldier = ServiceMember {
+        branch: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Air Force&quot;</span>),
+        name: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Chuck Norris&quot;</span>),
+        age: <span class="hljs-number">33</span>,
+        rank: <span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Technical Sergeant&quot;</span>),
+        years_of_experience: <span class="hljs-number">10</span>,
+    };
+    <span class="hljs-built_in">assert_eq!</span>(
+        army_soldier.member_of_branch(&amp;<span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Army&quot;</span>)),
+        <span class="hljs-string">&quot;John Rambo is in Army&quot;</span>,
+    );
+    <span class="hljs-built_in">assert_eq!</span>(
+        navy_soldier.member_of_branch(&amp;<span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Navy&quot;</span>)),
+        <span class="hljs-string">&quot;Fried Squid is in Navy&quot;</span>,
+    );
+    <span class="hljs-built_in">assert_eq!</span>(
+        air_force_soldier.member_of_branch(&amp;<span class="hljs-built_in">String</span>::from(<span class="hljs-string">&quot;Air Force&quot;</span>)),
+        <span class="hljs-string">&quot;Chuck Norris is in Air Force&quot;</span>,
+    );
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=e43a7d0a07ef1a82d92b1855b4d21bfd" target="_blank">Associated Item playground</a></p>
+<h2 id="phantom-types">Phantom Types</h2>
+<p>Phantom type parameters are not checked at runtime but instead are checked statically and at compile time</p>
+<p>Some Data types can use extra generic type parameters that serve as markers and these extra paramters do not hold storage values.</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">use</span> std::ops::Div;
+<span class="hljs-keyword">use</span> std::marker::PhantomData;
+
+<span class="hljs-comment">// Creating empty enumerations so we can define a unit type</span>
+<span class="hljs-meta">#[derive(Debug, Clone, Copy)]</span>
+<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Inch</span></span> {}
+
+<span class="hljs-meta">#[derive(Debug, Clone, Copy)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Length</span></span>&lt;Unit&gt;(<span class="hljs-keyword">f64</span>, PhantomData&lt;Unit&gt;);
+
+<span class="hljs-comment">// The `Div` trait defines the behavior of the `/` operator</span>
+<span class="hljs-keyword">impl</span>&lt;Unit&gt; Div <span class="hljs-keyword">for</span> Length&lt;Unit&gt; {
+    <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Output</span></span> = Length&lt;Unit&gt;;
+
+
+    <span class="hljs-comment">// div() returns a new `Length` containing the quotient</span>
+    <span class="hljs-comment">// dividend divided by the divisor is equal to the quotient </span>
+    <span class="hljs-comment">// 12 / 2 = 6</span>
+    <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">div</span></span>(<span class="hljs-keyword">self</span>, rhs: Length&lt;Unit&gt;) -&gt; Length&lt;Unit&gt; {
+        <span class="hljs-comment">// `/` calls the `Div` implementation for `f64`</span>
+        Length(<span class="hljs-keyword">self</span>.<span class="hljs-number">0</span> / rhs.<span class="hljs-number">0</span>, PhantomData)
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-comment">// Computation for converting Inches to Millimeters</span>
+    <span class="hljs-comment">// so 1 inch divided by 25.4 is equal to 0.0393701</span>
+    <span class="hljs-keyword">let</span> dividend: Length&lt;Inch&gt; = Length(<span class="hljs-number">1.0</span>, PhantomData);
+    <span class="hljs-keyword">let</span> divisor: Length&lt;Inch&gt; = Length(<span class="hljs-number">25.4</span>, PhantomData);
+
+    <span class="hljs-comment">// `/` calls the `div()` method we implemented for `Length&lt;Unit&gt;`</span>
+    <span class="hljs-keyword">let</span> quotient = dividend / divisor;
+    <span class="hljs-comment">// 1 / 25.4 = 0.0393701</span>
+    <span class="hljs-comment">// so 1 Millimeter is equal to 0.0393701 inch</span>
+    <span class="hljs-built_in">assert_eq!</span>(quotient.<span class="hljs-number">0</span>, <span class="hljs-number">0.03937007874015748</span>);
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=d3219056c20c0846b19f3a7429e57255" target="_blank">PhantomData playground</a></p>
+<h2 id="bread-crumb-navigation">Bread Crumb Navigation</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Previous</th>
+<th style="text-align:right">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x2190; <a href="error_handling.html">Error Handling</a></td>
+<td style="text-align:right"><a href="lifetimes.html">Lifetimes</a> &#x2192;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="error_handling.html" class="navigation navigation-prev " aria-label="Previous page: Error Handling">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lifetimes.html" class="navigation navigation-next " aria-label="Next page: Lifetimes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Generics","level":"1.20","depth":1,"next":{"title":"Lifetimes","level":"1.21","depth":1,"path":"docs/lifetimes.md","ref":"docs/lifetimes.md","articles":[]},"previous":{"title":"Error Handling","level":"1.19","depth":1,"path":"docs/error_handling.md","ref":"docs/error_handling.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","advanced-emoji","highlight","copy-code-button"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/generics.md","mtime":"2020-01-22T13:07:50.472Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T14:18:23.704Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
