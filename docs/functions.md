@@ -7,7 +7,7 @@
 * [Recursion](#recursion)
 * [Multiple Return Types](#multiple-return-types)
 * [const functions](#const-functions)
-* [functions koan](#functions-koan)
+* [Practice Exercise -> Functions](#practice-exercise-\-->functions)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Functions Playground
@@ -98,9 +98,9 @@ fn main() {
 }
 ```
 
-## functions koan
+## Practice Exercise -> Functions
 
-[functions koan](../koans/src/functions.rs)
+[Practice Exercise -> Functions](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=210c992d8d270ccdcd42b9f4c7da89b6)
 
 ## Bread Crumb Navigation
 _________________________

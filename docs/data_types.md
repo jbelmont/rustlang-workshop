@@ -26,7 +26,7 @@
 * [Trait Types](#trait-types)
     * [Trait Objects](#trait-objects)
     * [Impl trait](#impl-trait)
-* [data types koan](#data-types-koan)
+* [Practice Exercise -> Data Types](#practice-exercise-\-->data-types)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Data Types
@@ -671,9 +671,9 @@ fn main() {
 
 [Impl trait playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=06f14b91fffedce6cca3a7a7cbd9a97d)
 
-## data types koan
+## Practice Exercise -> Data Types
 
-[data types koan](../koans/src/data_types.rs)
+[Practice Exercise -> Data Types](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e1fc4c2589d4454fa49d88ac26eb3114)
 
 ## Bread Crumb Navigation
 _________________________

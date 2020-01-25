@@ -3,6 +3,7 @@
 ## Sections:
 
 * [Customary Hello World Program](#customary-hello-world-program)
+* [Practice Exercise -> Hello World](#practice-exercise-\-->hello-world)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Customary Hello World Program 
@@ -46,6 +47,10 @@ Here we just ran with `cargo run` since we were already in the *hello-world* pac
 > ./target/debug/hello-world
 Hello, world!
 ```
+
+## Practice Exercise -> Hello World
+
+Exercise Write your own hello world example in [Rust Playground](https://play.rust-lang.org/)
 
 ## Bread Crumb Navigation
 _________________________

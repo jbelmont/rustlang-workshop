@@ -9,7 +9,7 @@
 * [Struct Update Syntax](#struct-update-syntax)
 * [Struct Field init shorthand](#struct-field-init-shorthand)
 * [Struct Playground](#struct-playground)
-* [Structs koan](#structs-koan)
+* [Practice Exercise -> Structs](#practice-exercise-\-->structs)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Struct Definition
@@ -152,9 +152,9 @@ Notice that didn't add the value in rambo2 as it is the same name as the key.
 
 [Playground 3](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=4bfa5a6c3e1c920452a13e9d2425c58b)
 
-## Structs koan
+## Practice Exercise -> Structs
 
-[Structs koan](../koans/src/structs.rs)
+[Practice Exercise -> Structs](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e0ea71a30b60f13b170b216102a73fa8)
 
 ## Bread Crumb Navigation
 _________________________

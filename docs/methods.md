@@ -6,7 +6,7 @@
 * [Method example](#method-example)
 * [Difference between method and associated function](#difference-between-method-and-associated-function)
 * [Method Playground](#method-playground)
-* [Method koan](#method-koan)
+* [Practice Exercise -> Methods](#practice-exercise-\-->methods)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Method definition
@@ -64,9 +64,9 @@ Associated methods are called using the `::` syntax and notice that we didn't us
 
 [Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f22a750b80005e7b0b04e22a8ae81182)
 
-## Method koan
+## Practice Exercise -> Methods
 
-[Method koan](../koans/src/methods.rs)
+[Practice Exercise -> Methods](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=cd01830d2f3a93ed4bb3b2580f8072c8)
 
 ## Bread Crumb Navigation
 _________________________

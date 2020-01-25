@@ -22,7 +22,7 @@
     * [continue example](#continue-example)
 * [label expression](#label-expression)
     * [label example](#label-example)
-* [control flow koan](#control-flow-koan)
+* [Practice Exercise -> Control Flow](#practice-exercise-\-->control-flow)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Rust control structures
@@ -305,9 +305,9 @@ fn main() {
 
 [label example playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=0fb219093c247e29cd15d861e7672e84)
 
-## control flow koan
+## Practice Exercise -> Control Flow
 
-[control flow koan](../koans/src/control_flow.rs)
+[Practice Exercise -> Control Flow](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f0374485cab86b467f22bfae93cc7548)
 
 ## Bread Crumb Navigation
 _________________________

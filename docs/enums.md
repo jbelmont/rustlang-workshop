@@ -7,7 +7,7 @@
 * [Match expression](#match-expression)
 * [if let expression](#if-let-expression)
 * [Enum playground](#enum-playground)
-* [Enum koan](#enum-koan)
+* [Practice Exercise -> Enum](#practice-exercise-\-->enum)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Enum definition
@@ -66,9 +66,9 @@ If you look at the enum playground link you will see that I used an `if let` exp
 
 [Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=181056a1656ba5aab3bfadfdd2e6336b)
 
-## Enum koan
+## Practice Exercise -> Enum
 
-[Enum koan](../koans/src/enums.rs)
+[Practice Exercise -> Enum](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=54e0734415eb0c42750810099045038c)
 
 ## Bread Crumb Navigation
 _________________________

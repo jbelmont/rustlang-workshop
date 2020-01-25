@@ -9,7 +9,7 @@
 * [for loop](#for-loop)
 * [let statement](#let-statement)
 * [function parameter pattern](#function-parameter-pattern)
-* [Patterns koan](#patterns-koan)
+* [Practice Exercise -> Patterns](#practice-exercise-\-->patterns)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Different Pattern Types in Rust
@@ -231,9 +231,9 @@ fn main() {
 
 [function parameter pattern playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=5e1e5b56cafc7e6a86efef3e03db3ed1)
 
-## Patterns koan
+## Practice Exercise -> Patterns
 
-[Patterns koan](../koans/src/patterns.rs)
+[Practice Exercise -> Patterns](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2723e7b8df244d7c12c4cdf282edc420)
 
 ## Bread Crumb Navigation
 _________________________

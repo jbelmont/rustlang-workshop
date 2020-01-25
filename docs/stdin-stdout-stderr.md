@@ -10,7 +10,7 @@
 * [eprintln!](#eprint\!-macro)
 * [positional arguments](#positional-arguments)
 * [text alignment](#text-alignment)
-* [exercise](#exercise)
+* [Practice Exercise -> Data Streams](#practice-exercise-\-->data-streams)
 * [Bread Crumb Navigation](#bread-crumb-navigation)
 
 ## Formatting strings and printing
@@ -83,7 +83,7 @@ Text can be aligned or padded a certain way by assigning in the arguments to the
 
 [text alignment playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=37ca1d2ad04c66be91baf746fcf36cb1)
 
-#### exercise
+## Practice Exercise -> Data Streams
 
 Please fix the issue you see in the following [playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=299c6ac05558f1715a5c3797372fef1d)
 
